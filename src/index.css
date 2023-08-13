@@ -1,7 +1,232 @@
-.nt-footer{
-  background-color: rgba(209, 255, 3, 1);
+@font-face {
+  font-family: 'Starz 2016';
+  src: url('./assets/fonts/Starz2016.eot');
+  src: url('./assets/fonts/Starz2016.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Starz2016.woff2') format('woff2'),
+    url('./assets/fonts/Starz2016.woff') format('woff'),
+    url('./assets/fonts/Starz2016.svg#Starz2016') format('svg');
+  font-style: normal;
+  font-display: swap;
 }
-.nt-footer_logo{
-  width: 159.6133575439453px;
-  height: 186.78160095214844px;
+
+@font-face {
+  font-family: 'Galvji';
+  src: url('./assets/fonts/Galvji.eot');
+  src: url('./assets/fonts/Galvji.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Galvji.woff2') format('woff2'),
+    url('./assets/fonts/Galvji.woff') format('woff'),
+    url('./assets/fonts/Galvji.svg#Galvji') format('svg');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./assets/fonts/Garamond.eot');
+  src: url('./assets/fonts/Garamond.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Garamond.woff2') format('woff2'),
+    url('./assets/fonts/Garamond.woff') format('woff'),
+    url('./assets/fonts/Garamond.svg#Garamond') format('svg');
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-family-Galvji {
+  font-family: 'Galvji';
+}
+
+.font-family-Starz-2016 {
+  font-family: 'Starz 2016';
+}
+
+.font-family-Garamond {
+  font-family: 'Garamond';
+}
+
+.footer-nt-nombre {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+
+}
+
+.footer-nt-cargo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+
+
+}
+
+.nt-footer {
+  background-color: rgba(209, 255, 3, 1);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.nt-footer_logo {
+  width: 96px;
+  height: 112px;
+}
+
+.nt-footer_ico-redes {
+  width: 24px;
+  height: 24px;
+
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.nombre-image {
+  width: 154px;
+  height: 44.3px;
+  margin-bottom: 8px;
+}
+
+.row-nombres a {
+  font-family: Galvji;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+  color: initial;
+
+}
+.row-nombres h1,.row-nombres h2, .row-nombres a:not(:last-child){
+  margin-bottom: 5px;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+
+.mb5px {
+  margin-bottom: 5px;
+}
+
+
+
+.row-redes img {
+  margin-right: 15px;
+  width: 18px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.row-redes a:hover img{
+  transform: scale(1.1);
+  
+}
+.row-redes a:hover img.whatsapp{
+  content: url('./assets/images/whatsapp-ico-rosa.png');
+}
+.row-redes a:hover img.instagram{
+  content: url('./assets/images/instagram-ico-rosa.png');
+}
+.row-redes a:hover img.linkedin{
+  content: url('./assets/images/linkedin-ico-rosa.png');
+}
+.row-redes a:hover img.facebook{
+  content: url('./assets/images/facebook-ico-rosa.png');
+}
+
+.row-redes {
+  right: 15px;
+  bottom: 25px;
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+@media (min-width: 767px) {
+  .footer-nt-nombre {
+    font-size: 35px;
+    line-height: 46px;
+
+  }
+
+  .footer-nt-cargo {
+    font-size: 30px;
+    line-height: 33px;
+
+  }
+
+  .nombre-image {
+    margin-bottom: 10px;
+  }
+
+
+
+  .nt-footer {
+    padding-bottom: 60px;
+  }
+
+  .nt-footer_ico-redes {
+    width: 39px;
+    height: 39px;
+
+  }
+
+  .nt-footer_logo {
+    width: 159.6133575439453px;
+    height: 186.78160095214844px;
+  }
+
+  .nombre-image {
+    width: 257.46px;
+    height: 74.21px;
+  }
+
+  .row-nombres a {
+
+    font-size: 20px;
+    line-height: 23px;
+
+
+
+  }
+  .row-nombres h1,.row-nombres h2, .row-nombres a:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .row-redes {
+    position: relative;
+    right: inherit;
+    bottom: inherit;
+    top: 25px;
+  }
+  .row-redes img{
+    width: 28px;
+    margin-right: 35px;
+  }
 }
