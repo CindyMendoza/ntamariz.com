@@ -18,7 +18,7 @@ function Footer() {
               <img
                 src="https://ntamariz.files.wordpress.com/2023/08/animacionlogosinfondo-2.gif"
                 alt="Logo Natalia Tamariz"
-                className="nt-footer_logo"
+                className="nt-footer_logo img-fluid"
               />
             </div>
             <div className="ml1">

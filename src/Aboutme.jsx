@@ -4,24 +4,29 @@ import aboutmeImageNt from "./assets/images/aboutme-image-nt.png";
 function Aboutme() {
   return (
     <>
-      <Container
-        fluid
-        className="container-fluid overflow-auto position-relative aboutme"
-      >
+      <Container className="overflow-auto position-relative aboutme">
         <Row className="">
-          <Col className="" xs={12} md={6}>
-            <h1 className="font-family-Starz-2016 text-align-center">ABOUT ME</h1>
-            <p className="font-family-Galvji text-align-center">
-              I am a Peruvian photographer that loves fashion and telling
-              stories through powerfull images.
-            </p>
+          <Col className="" xs={12} lg={6}>
+            <div className="contenedor-centrado-flex flex-direction-column align-items-center">
+              <div>
+                <h1 className="font-family-Starz-2016 text-align-center fondo-amarillo-titular">
+                  ABOUT ME
+                </h1>
+              </div>
+              <p className="font-family-Galvji text-align-center">
+                I am a Peruvian photographer that loves fashion and telling
+                stories through powerfull images.
+              </p>
+            </div>
           </Col>
           <Col xs={12} md={6}>
-            <img
-              src={aboutmeImageNt}
-              alt="Imagen de Natalia Tamariz"
-              className="aboutme-image-nt"
-            />
+            <div className="contenedor-centrado-flex">
+              <img
+                src={aboutmeImageNt}
+                alt="Imagen de Natalia Tamariz"
+                className="aboutme-image-nt img-fluid"
+              />
+            </div>
           </Col>
         </Row>
       </Container>
