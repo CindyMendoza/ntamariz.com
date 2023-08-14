@@ -331,10 +331,11 @@ p {
   opacity: 1;
   align-self: baseline;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
-.modal-header>div {}
+
+
 
 .modal-header h1 {
   max-width: 150px;
@@ -342,6 +343,31 @@ p {
 
 .modal-header h1 span:last-child {
   padding-right: 25px;
+}
+
+#slider-photography img {
+  border-radius: 10px;
+  width: 274.27px;
+  height: 393.21px;
+}
+
+#slider-photography h4 {
+  font-family: Galvji;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 8px;
+}
+
+#slider-photography h1 {
+  margin-bottom: 30px;
+}
+
+.photography {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 767px) {
@@ -446,17 +472,21 @@ p {
     line-height: 29px;
   }
 
-  #slider-art-direction .slick-next {
+  #slider-art-direction .slick-next,
+  #slider-photography .slick-next {
     right: 80px;
   }
 
-  #slider-art-direction .slick-prev {
+  #slider-art-direction .slick-prev,
+  #slider-photography .slick-prev {
     left: 60px;
     z-index: 1;
   }
 
   #slider-art-direction .slick-prev,
-  #slider-art-direction .slick-next {
+  #slider-art-direction .slick-next,
+  #slider-photography .slick-prev,
+  #slider-photography .slick-next {
     width: 50px;
     height: 50px;
     border: solid rgba(241, 4, 180, 1);
@@ -466,18 +496,37 @@ p {
     top: 40%;
   }
 
-  #slider-art-direction .slick-prev {
+  #slider-art-direction .slick-prev,
+  #slider-photography .slick-prev {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
   }
 
-  #slider-art-direction .slick-next {
+  #slider-art-direction .slick-next,
+  #slider-photography .slick-next {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
 
   #slider-art-direction .slick-prev:before,
-  #slider-art-direction .slick-next:before {
+  #slider-art-direction .slick-next:before,
+  #slider-photography .slick-prev:before,
+  #slider-photography .slick-next:before {
     content: none;
+  }
+
+  .art-direction {
+    position: relative;
+  }
+
+  .art-direction::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 14px;
+    background-color: rgba(209, 255, 3, 1);
+    z-index: 0;
   }
 }

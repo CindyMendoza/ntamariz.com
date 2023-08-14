@@ -24,7 +24,7 @@ function Artdirection() {
     setShowModal(false);
   };
   const images = [
-    { src: sliderArtDirectionMtiasMakeUp, alt: "MATIAS MAKE UP" },
+    // { src: sliderArtDirectionMtiasMakeUp, alt: "MATIAS MAKE UP" },
     { src: sliderArtDirectionRuna, alt: "RUNA" },
     { src: sliderArtDirectionCerebral, alt: "Cerebral" },
     { src: sliderArtDirectionKrylon, alt: "Krylon" },
@@ -94,6 +94,18 @@ function Artdirection() {
           <Col xs={12} lg={9}>
             <div id="slider-art-direction">
               <Slider {...settings}>
+                <div>
+                  <div>
+                    <img
+                      src={sliderArtDirectionMtiasMakeUp}
+                      alt="MATIAS MAKE UP"
+                      className="img-fluid lazyload"
+                      onClick={openModal}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h4>MATIAS MAKE UP</h4>
+                  </div>
+                </div>
                 {images.map((image, index) => (
                   <div key={index}>
                     <div>
@@ -101,8 +113,6 @@ function Artdirection() {
                         src={image.src}
                         alt={image.alt}
                         className="img-fluid lazyload"
-                        onClick={openModal}
-                        style={{ cursor: "pointer" }}
                       />
                       <h4>{image.alt}</h4>
                     </div>
