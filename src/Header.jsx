@@ -60,7 +60,7 @@ function Header() {
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <img
-                  className="facebook"
+                  className="mail"
                   src={mailIcoNegro}
                   alt="Facebook de Natalia Tamariz"
                 />

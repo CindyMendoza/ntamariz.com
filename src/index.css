@@ -284,25 +284,33 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-.row-redes a:hover img {
+.row-redes a:hover img,
+.header .redes a:hover img {
   transform: scale(1.1);
 
 }
 
-.row-redes a:hover img.whatsapp {
+.row-redes a:hover img.whatsapp,
+.header .redes a:hover img.whatsapp {
   content: url('./assets/images/whatsapp-ico-rosa.png');
 }
 
-.row-redes a:hover img.instagram {
+.row-redes a:hover img.instagram,
+.header .redes a:hover img.instagram {
   content: url('./assets/images/instagram-ico-rosa.png');
 }
 
-.row-redes a:hover img.linkedin {
+.row-redes a:hover img.linkedin,
+.header .redes a:hover img.linkedin {
   content: url('./assets/images/linkedin-ico-rosa.png');
 }
 
 .row-redes a:hover img.facebook {
   content: url('./assets/images/facebook-ico-rosa.png');
+}
+
+.header .redes a:hover img.mail {
+  content: url('./assets/images/mail-ico-rosa.png');
 }
 
 .row-redes {
@@ -608,8 +616,28 @@ p {
 
   .header {
     background-image: url('./assets/images/header-imagen.png');
+    padding-bottom: 50vw;
+    background-size: cover;
+    background-position: 0 0;
   }
-  .header .logo img{
+
+  .header .logo img {
     width: 149px;
+  }
+
+  .header .cargo h1 {
+    font-size: 89px;
+    line-height: 76px;
+  }
+
+  .header .cargo span {
+    font-size: 37px;
+    line-height: 82px;
+  }
+
+  .header .contenedor-centrado-flex {
+    justify-content: flex-start;
+    margin-top: 4rem !important;
+    margin-left: 4rem;
   }
 }
