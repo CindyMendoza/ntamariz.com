@@ -19,12 +19,12 @@ function Aboutme() {
               </p>
             </div>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} lg={6}>
             <div className="contenedor-centrado-flex">
               <img
                 src={aboutmeImageNt}
                 alt="Imagen de Natalia Tamariz"
-                className="aboutme-image-nt img-fluid"
+                className="aboutme-image-nt img-fluid lazyload"
               />
             </div>
           </Col>
