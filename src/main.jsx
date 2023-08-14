@@ -5,11 +5,13 @@ import "./index.css";
 import Aboutme from "./Aboutme.jsx";
 import Artdirection from "./Artdirection.jsx";
 import Photography from "./Photography.jsx";
+import Header from "./Header.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Photography/>
-    <Artdirection/>
+    <Header />
+    <Photography />
+    <Artdirection />
     <Aboutme />
     <Footer />
   </React.StrictMode>

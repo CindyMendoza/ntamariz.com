@@ -370,6 +370,58 @@ p {
   padding-bottom: 30px;
 }
 
+.photography h1 {
+  margin-bottom: 40px;
+}
+
+.header {
+  position: relative;
+}
+
+.header .logo img {
+  width: 92px;
+}
+
+.header .cargo h1 {
+  font-family: 'Starz 2016';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 180px;
+}
+
+.header .cargo span {
+  font-family: Garamond;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.header .redes img {
+  width: 24px;
+}
+
+.header .redes {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(209, 255, 3, 1);
+}
+
+.header .redes a {
+  padding: 1rem;
+}
+
 @media (min-width: 767px) {
 
 
