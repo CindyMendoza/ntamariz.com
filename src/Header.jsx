@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import whatsappIcoNegro from "./assets/images/whatsapp-ico-negro.png";
 import instagramIcoNegro from "./assets/images/instagram-ico-negro.png";
 import linkedinIcoNegro from "./assets/images/linkedin-ico-negro.png";
-import facebookIcoNegro from "./assets/images/facebook-ico-negro.png";
+import mailIcoNegro from "./assets/images/mail-ico-negro.png";
 import animacionlogosinfondo from "./assets/images/animacionlogosinfondo.gif";
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
       <Container fluid className="header">
         <Row>
           <Col>
-            <div>
+            <div className="contenedor-centrado-flex">
               <div className="logo">
                 <img
                   src={animacionlogosinfondo}
@@ -61,7 +61,7 @@ function Header() {
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <img
                   className="facebook"
-                  src={facebookIcoNegro}
+                  src={mailIcoNegro}
                   alt="Facebook de Natalia Tamariz"
                 />
               </a>
