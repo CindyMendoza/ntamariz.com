@@ -35,15 +35,32 @@ function Artdirection() {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrow: false,
+    // variableWidth: true,
+    // centerMode: true,
+    // centerPadding: "50px",
     responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 2.5,
+          arrow: false,
+        },
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 2,
+          arrow: false,
+        },
+      },
+     
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1.5,
-          slidesToScroll: 1.5,
-          arrow: false,
         },
       },
+     
     ],
   };
 
@@ -99,7 +116,7 @@ function Artdirection() {
                     <img
                       src={sliderArtDirectionMtiasMakeUp}
                       alt="MATIAS MAKE UP"
-                      className="img-fluid lazyload"
+                      className=" lazyload"
                       onClick={openModal}
                       style={{ cursor: "pointer" }}
                     />
@@ -112,7 +129,7 @@ function Artdirection() {
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="img-fluid lazyload"
+                        className=" lazyload"
                       />
                       <h4>{image.alt}</h4>
                     </div>

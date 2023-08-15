@@ -14,8 +14,6 @@ import photographySlider4 from "./assets/images/photography-slider-4.png";
 import photographySlider5 from "./assets/images/photography-slider-5.png";
 
 function Photography() {
-
-  
   const images = [
     { src: photographySlider1, alt: "Photography projects" },
     { src: photographySlider2, alt: "Photography projects" },
@@ -29,30 +27,63 @@ function Photography() {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrow: false,
+    // centerPadding: "50px",
     responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3.5,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 481,
+        settings: {
           slidesToShow: 1.5,
-          slidesToScroll: 1.5,
-          arrow: false,
         },
       },
     ],
+
+    // responsive: [
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1.5,
+    //       slidesToScroll: 1.5,
+    //       arrow: false,
+    //     },
+    //   },
+    // ],
   };
 
   return (
     <>
-      
-
-      <Container fluid className="photography overflow-hidden">
+      <Container className="photography ">
         <Row>
           <Col xs={12} className="contenedor-centrado-flex align-items-center">
             <div>
-              <h1 className="font-family-Starz-2016 ">
-                <span className="fondo-amarillo-titular">Photography</span>
-                <br></br>
-                <span className="fondo-amarillo-titular">projects</span>
+              <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+                Photography
+              </h1>
+              <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+                projects
               </h1>
             </div>
           </Col>

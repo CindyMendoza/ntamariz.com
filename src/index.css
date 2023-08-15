@@ -31,6 +31,21 @@
   font-display: swap;
 }
 
+.art-direction {
+  position: relative;
+}
+
+.art-direction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 14px;
+  background-color: rgba(209, 255, 3, 1);
+  z-index: 0;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -113,8 +128,21 @@
   text-transform: uppercase;
 }
 
-#slider-art-direction .slick-slide>div {
-  margin-right: 1rem;
+#slider-art-direction .slick-slide>div,
+#slider-photography .slick-slide>div {
+  /* margin-right: 10rem; */
+  /* margin-left: 10rem; */
+}
+
+#slider-photography .slick-slide,
+#slider-art-direction .slick-slide {
+  /* margin-right: 1rem; */
+  /* margin-left: 1rem; */
+}
+
+#slider-photography img,
+#slider-art-direction img {
+  /* margin-right: 1rem; */
 }
 
 .aboutme {
@@ -376,10 +404,34 @@ p {
 .photography {
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .photography h1 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+}
+
+.photography h1:first-child {
+  margin-bottom: 0px;
+  padding-right: 15px;
+}
+
+.photography h1:first-child::before {
+  width: 89%;
+}
+
+.photography h1:last-child {
   margin-bottom: 40px;
+}
+
+.photography h1:last-child::before {
+  width: 66%;
+  margin-right: 84px;
 }
 
 .header {
@@ -603,16 +655,7 @@ p {
     position: relative;
   }
 
-  .art-direction::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 14px;
-    background-color: rgba(209, 255, 3, 1);
-    z-index: 0;
-  }
+
 
   .header {
     background-image: url('./assets/images/header-imagen.png');
@@ -639,5 +682,35 @@ p {
     justify-content: flex-start;
     margin-top: 4rem !important;
     margin-left: 4rem;
+  }
+
+  .photography {
+    padding-top: 60px;
+  }
+
+  .photography h1 {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 77px;
+  }
+
+  .photography h1:last-child {
+    padding-right: 30px;
+  }
+
+  .photography h1:last-child::before {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .photography::before {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    left: -20px;
+    width: 14px;
+    height: 80%;
+    background-color: rgba(209, 255, 3, 1);
+    z-index: 0;
   }
 }
