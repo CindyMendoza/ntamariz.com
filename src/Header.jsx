@@ -18,7 +18,7 @@ function Header() {
               <div className="logo">
                 <img
                   src={animacionlogosinfondo}
-                  className="img-fluid lazyload"
+                  className="lazyload"
                 />
               </div>
               <div className="cargo">

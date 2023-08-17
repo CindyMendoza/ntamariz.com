@@ -39,7 +39,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 15px;
   width: 40%;
   height: 14px;
   background-color: rgba(209, 255, 3, 1);
@@ -50,9 +50,19 @@
   align-items: center;
 }
 
+.justify-content-left {
+  justify-content: left !important;
+}
+
 .contenedor-centrado-flex {
   display: flex;
   justify-content: center;
+}
+
+.header .contenedor-centrado-flex {
+  justify-content: flex-start;
+  margin-top: 35px !important;
+  margin-left: 23px;
 }
 
 .flex-direction-column {
@@ -111,6 +121,7 @@
 
 #slider-art-direction img {
   width: 289px;
+  height: 414px;
 }
 
 
@@ -126,23 +137,6 @@
   text-align: left;
   margin-top: 8px;
   text-transform: uppercase;
-}
-
-#slider-art-direction .slick-slide>div,
-#slider-photography .slick-slide>div {
-  /* margin-right: 10rem; */
-  /* margin-left: 10rem; */
-}
-
-#slider-photography .slick-slide,
-#slider-art-direction .slick-slide {
-  /* margin-right: 1rem; */
-  /* margin-left: 1rem; */
-}
-
-#slider-photography img,
-#slider-art-direction img {
-  /* margin-right: 1rem; */
 }
 
 .aboutme {
@@ -383,8 +377,8 @@ p {
 
 #slider-photography img {
   border-radius: 10px;
-  width: 274.27px;
-  height: 393.21px;
+  width: 289px;
+  height: 414px;
 }
 
 #slider-photography h4 {
@@ -422,7 +416,7 @@ p {
 }
 
 .photography h1:first-child::before {
-  width: 89%;
+  width: 92%;
 }
 
 .photography h1:last-child {
@@ -446,7 +440,7 @@ p {
 }
 
 .header .logo img {
-  width: 72px;
+  width: 68px;
 }
 
 .header .cargo h1 {
@@ -457,7 +451,7 @@ p {
   letter-spacing: 0em;
   text-align: left;
   width: 180px;
-  margin-bottom: -10px;
+  margin-bottom: -12px;
 }
 
 .header .cargo span {
@@ -584,6 +578,11 @@ p {
     line-height: 103px;
   }
 
+  #slider-photography img {
+    width: 339px;
+    height: 486px;
+  }
+
   .aboutme p {
     font-size: 20px;
     line-height: 24px;
@@ -601,6 +600,7 @@ p {
 
   #slider-art-direction img {
     width: 339px;
+    height: 486px;
   }
 
   #slider-art-direction h4 {
@@ -659,18 +659,19 @@ p {
 
   .header {
     background-image: url('./assets/images/header-imagen.png');
-    padding-bottom: 50vw;
+    padding-bottom: 872px;
     background-size: cover;
-    background-position: 0 0;
+    background-position: top center;
   }
 
   .header .logo img {
-    width: 149px;
+    width: 126px;
   }
 
   .header .cargo h1 {
     font-size: 89px;
     line-height: 76px;
+    margin-bottom: -20px;
   }
 
   .header .cargo span {
@@ -678,14 +679,14 @@ p {
     line-height: 82px;
   }
 
-  .header .contenedor-centrado-flex {
-    justify-content: flex-start;
-    margin-top: 4rem !important;
-    margin-left: 4rem;
-  }
+
 
   .photography {
     padding-top: 60px;
+  }
+
+  .photography .contenedor-centrado-flex {
+    justify-content: left !important;
   }
 
   .photography h1 {
@@ -703,13 +704,13 @@ p {
     width: 100%;
   }
 
-  .photography::before {
+  .header::after {
     content: "";
     position: absolute;
-    bottom: 5%;
-    left: -20px;
+    bottom: -62%;
+    left: 15px;
     width: 14px;
-    height: 80%;
+    height: 586px;
     background-color: rgba(209, 255, 3, 1);
     z-index: 0;
   }

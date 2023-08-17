@@ -22,6 +22,8 @@ function Photography() {
     { src: photographySlider5, alt: "Photography projects" },
   ];
   const settings = {
+    centerMode: true,
+    centerPadding: "15px",
     dots: false,
     infinite: false,
     slidesToShow: 4,
@@ -32,7 +34,7 @@ function Photography() {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 3.5,
+          slidesToShow: 4,
         },
       },
       {
@@ -44,19 +46,19 @@ function Photography() {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.5,
         },
       },
       {
         breakpoint: 481,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
         },
       },
     ],
@@ -75,7 +77,7 @@ function Photography() {
 
   return (
     <>
-      <Container className="photography ">
+      <Container fluid className="photography ">
         <Row>
           <Col xs={12} className="contenedor-centrado-flex align-items-center">
             <div>
@@ -96,7 +98,7 @@ function Photography() {
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="img-fluid lazyload"
+                        className="lazyload"
                       />
                       <h4>{image.alt}</h4>
                     </div>
