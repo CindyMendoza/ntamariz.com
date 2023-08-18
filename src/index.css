@@ -112,11 +112,11 @@
 }
 
 .art-direction h1 span:first-child::before {
-  width: 86%;
+  width: 307px;
 }
 
 .art-direction h1 span:last-child::before {
-  width: 80%;
+  width: 205px;
 }
 
 #slider-art-direction img {
@@ -492,6 +492,11 @@ p {
   padding: 1rem;
 }
 
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  opacity: 0;
+}
+
 @media (min-width: 430px) {
   .header {
     background-image: url('./assets/images/header-imagen.png');
@@ -712,6 +717,12 @@ p {
     width: 14px;
     height: 586px;
     background-color: rgba(209, 255, 3, 1);
-    z-index: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1400px) {
+  .photography.container,.art-direction.container {
+    max-width: 1500px !important;
   }
 }

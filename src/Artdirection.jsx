@@ -34,33 +34,57 @@ function Artdirection() {
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrow: false,
-    // variableWidth: true,
-    // centerMode: true,
-    // centerPadding: "50px",
+    arrow: true,
     responsive: [
       {
-        breakpoint: 1500,
+        breakpoint: 1399,
         settings: {
-          slidesToShow: 2.5,
-          arrow: false,
+          slidesToShow: 1.8,
         },
       },
       {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-          arrow: false,
-        },
-      },
-     
-      {
-        breakpoint: 768,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 1.5,
         },
       },
-     
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1.1,
+        },
+      },
+      {
+        breakpoint: 768,
+        arrow: false,
+        settings: {
+          slidesToShow: 1.7,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+      {
+        breakpoint: 465,
+        settings: {
+          slidesToShow: 1.3,
+        },
+      },
+      {
+        breakpoint: 410,
+        settings: {
+          slidesToShow: 1.1,
+        },
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 
@@ -93,11 +117,13 @@ function Artdirection() {
         </Modal>
       </div>
 
-      <Container fluid className="art-direction overflow-hidden">
+      <Container className="art-direction">
         <Row>
           <Col
             xs={12}
-            lg={3}
+            md={5}
+            xl={4}
+            xxl={3}
             className="contenedor-centrado-flex align-items-center"
           >
             <div>
@@ -108,7 +134,7 @@ function Artdirection() {
               </h1>
             </div>
           </Col>
-          <Col xs={12} lg={9}>
+          <Col xs={12} md={7} xl={8} xxl={9}>
             <div id="slider-art-direction">
               <Slider {...settings}>
                 <div>

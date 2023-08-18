@@ -22,62 +22,69 @@ function Photography() {
     { src: photographySlider5, alt: "Photography projects" },
   ];
   const settings = {
-    centerMode: true,
-    centerPadding: "15px",
     dots: false,
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrow: false,
-    // centerPadding: "50px",
+    arrow: true,
     responsive: [
       {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1200,
+        breakpoint: 1399,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
         },
       },
       {
         breakpoint: 768,
+        arrow: false,
+        settings: {
+          slidesToShow: 1.7,
+        },
+      },
+      {
+        breakpoint: 576,
         settings: {
           slidesToShow: 1.5,
         },
       },
       {
-        breakpoint: 481,
+        breakpoint: 465,
+        settings: {
+          slidesToShow: 1.3,
+        },
+      },
+      {
+        breakpoint: 410,
+        settings: {
+          slidesToShow: 1.1,
+        },
+      },
+      {
+        breakpoint: 350,
         settings: {
           slidesToShow: 1,
         },
       },
+      
     ],
 
-    // responsive: [
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       slidesToShow: 1.5,
-    //       slidesToScroll: 1.5,
-    //       arrow: false,
-    //     },
-    //   },
-    // ],
   };
 
   return (
     <>
-      <Container fluid className="photography ">
+      <Container className="photography ">
         <Row>
           <Col xs={12} className="contenedor-centrado-flex align-items-center">
             <div>
