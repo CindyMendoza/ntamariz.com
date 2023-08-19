@@ -91,7 +91,7 @@ function Artdirection() {
   return (
     <>
       <div>
-        <Modal show={showModal} onHide={closeModal}>
+        <Modal show={showModal} onHide={closeModal} size="xl">
           <Modal.Header closeButton>
             <div className="contenedor-centrado-flex align-items-center width-100">
               <h1 className="font-family-Starz-2016 ">

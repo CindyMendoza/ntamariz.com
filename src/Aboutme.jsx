@@ -1,10 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
-import aboutmeImageNt from "./assets/images/aboutme-image-nt.png";
+import aboutmeImageNt from "./assets/images/aboutme-image-nt_v2.png";
 
 function Aboutme() {
   return (
     <>
-      <Container className="overflow-auto position-relative aboutme">
+      <Container className="position-relative aboutme">
         <Row className="">
           <Col className="" xs={12} lg={6}>
             <div className="contenedor-centrado-flex flex-direction-column align-items-center">

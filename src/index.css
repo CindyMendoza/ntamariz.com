@@ -215,14 +215,18 @@
 }
 
 .nt-footer_logo {
-  width: 96px;
-  height: 112px;
+  width: 80px;
+  height: 99px;
 }
 
 .nt-footer_ico-redes {
   width: 24px;
   height: 24px;
 
+}
+
+.nt-footer .row-nombres h2 {
+  margin-top: -11px;
 }
 
 .display-flex {
@@ -537,8 +541,8 @@ p {
   }
 
   .nt-footer_logo {
-    width: 159.6133575439453px;
-    height: 186.78160095214844px;
+    width: 160px;
+    height: 170px;
   }
 
   .nombre-image {
@@ -719,10 +723,16 @@ p {
     background-color: rgba(209, 255, 3, 1);
     z-index: 1;
   }
+
+  .nt-footer .row-nombres h2 {
+    margin-top: -18px;
+  }
 }
 
 @media (min-width: 1400px) {
-  .photography.container,.art-direction.container {
+
+  .photography.container,
+  .art-direction.container {
     max-width: 1500px !important;
   }
 }
