@@ -727,6 +727,18 @@ p {
   .nt-footer .row-nombres h2 {
     margin-top: -18px;
   }
+
+  .modal-header h1 {
+    max-width: initial;
+  }
+
+  .modal-header h1 span:last-child::before {
+    width: 100%;
+  }
+
+  .modal-header h1 span:last-child {
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 1400px) {

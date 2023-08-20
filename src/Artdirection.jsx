@@ -92,7 +92,7 @@ function Artdirection() {
     <>
       <div>
         <Modal show={showModal} onHide={closeModal} size="xl">
-          <Modal.Header closeButton>
+          <Modal.Header className="pt-5 pb-0" closeButton>
             <div className="contenedor-centrado-flex align-items-center width-100">
               <h1 className="font-family-Starz-2016 ">
                 <span className="fondo-amarillo-titular">Matias </span>
@@ -100,7 +100,8 @@ function Artdirection() {
               </h1>
             </div>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="p-5">
+
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
