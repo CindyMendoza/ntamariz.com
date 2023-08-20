@@ -92,81 +92,92 @@ function Artdirection() {
     <>
       <div>
         <Modal show={showModal} onHide={closeModal} size="xl">
-          <Modal.Header className="pt-5 pb-0" closeButton>
+          <Modal.Header className="p-5 pb-0" closeButton>
             <div className="contenedor-centrado-flex align-items-center width-100">
               <h1 className="font-family-Starz-2016 ">
-                <span className="fondo-amarillo-titular">Matias </span>
-                <span className="fondo-amarillo-titular">MAKEUP</span>
+                <span className="fondo-amarillo-titular">MATTIAS</span>
+                <span className="fondo-amarillo-titular">cover</span>
               </h1>
             </div>
           </Modal.Header>
-          <Modal.Body className="p-5">
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <img
-              src={imagenModal}
-              alt=""
-              className="img-fluid lazyload"
-              style={{ cursor: "pointer" }}
-            />
+          <Modal.Body className="p-5 pt-3">
+            <div>
+              <div className="text-align-center font-family-Galvji font-size-20px mb-3">
+                <strong>CW:</strong>{" "}
+                <span className="margin-right-2rem"> Landon Bennett</span>{" "}
+                <strong className="line-vertical"> AD:</strong>{" "}
+                <span>Natalia Tamariz</span>
+              </div>
+              <div className="font-family-Galvji font-size-17px mb-4">
+                <p>
+                  <strong>Problem:</strong> Men want to look good by getting
+                  tan, but at the end their skin look orange. <br></br>
+                </p>
+                <p>
+                  <strong>Solution:</strong> Wear MATTIAS mens foundation.
+                  <br></br>
+                </p>
+                <p>
+                  <strong>Concept:</strong> Not your presidents makeup
+                </p>
+              </div>
+              <div>
+                <img src={imagenModal} alt="" className="img-fluid lazyload" />
+              </div>
+            </div>
           </Modal.Body>
         </Modal>
-      </div>
 
-      <Container className="art-direction">
-        <Row>
-          <Col
-            xs={12}
-            md={5}
-            xl={4}
-            xxl={3}
-            className="contenedor-centrado-flex align-items-center"
-          >
-            <div>
-              <h1 className="font-family-Starz-2016 ">
-                <span className="fondo-amarillo-titular">Art Direction</span>
-                <br></br>
-                <span className="fondo-amarillo-titular">Projects</span>
-              </h1>
-            </div>
-          </Col>
-          <Col xs={12} md={7} xl={8} xxl={9}>
-            <div id="slider-art-direction">
-              <Slider {...settings}>
-                <div>
+        <Container className="art-direction">
+          <Row>
+            <Col
+              xs={12}
+              md={5}
+              xl={4}
+              xxl={3}
+              className="contenedor-centrado-flex align-items-center"
+            >
+              <div>
+                <h1 className="font-family-Starz-2016 ">
+                  <span className="fondo-amarillo-titular">Art Direction</span>
+                  <br></br>
+                  <span className="fondo-amarillo-titular">Projects</span>
+                </h1>
+              </div>
+            </Col>
+            <Col xs={12} md={7} xl={8} xxl={9}>
+              <div id="slider-art-direction">
+                <Slider {...settings}>
                   <div>
-                    <img
-                      src={sliderArtDirectionMtiasMakeUp}
-                      alt="MATIAS MAKE UP"
-                      className=" lazyload"
-                      onClick={openModal}
-                      style={{ cursor: "pointer" }}
-                    />
-                    <h4>MATIAS MAKE UP</h4>
-                  </div>
-                </div>
-                {images.map((image, index) => (
-                  <div key={index}>
                     <div>
                       <img
-                        src={image.src}
-                        alt={image.alt}
+                        src={sliderArtDirectionMtiasMakeUp}
+                        alt="MATIAS MAKE UP"
                         className=" lazyload"
+                        onClick={openModal}
+                        style={{ cursor: "pointer" }}
                       />
-                      <h4>{image.alt}</h4>
+                      <h4>MATIAS MAKE UP</h4>
                     </div>
                   </div>
-                ))}
-              </Slider>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+                  {images.map((image, index) => (
+                    <div key={index}>
+                      <div>
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className=" lazyload"
+                        />
+                        <h4>{image.alt}</h4>
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 }
