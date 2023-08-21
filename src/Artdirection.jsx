@@ -212,7 +212,7 @@ function Artdirection() {
                     <video
                       controls
                       width="100%"
-                      style={{ "max-width": "770px" }}
+                      style={{ maxWidth: "770px" }}
                       onClick={toggleVideo}
                     >
                       <source src={videoFile} type="video/mp4" />
@@ -266,8 +266,17 @@ function Artdirection() {
                 </p>
               </div>
               <div className="contenedor-centrado-flex">
-                <div className="img">
-                  <video controls style={{width: '100%',    'max-width': '752px', 'margin-bottom': '1rem',position:'relative','z-index': 0}}>
+                <div className="img bgYellowCuadrado">
+                  <video
+                    controls
+                    style={{
+                      width: "100%",
+                      maxWidth: "752px",
+                      marginBottom: "1rem",
+                      position: "relative",
+                      zIndex: 0,
+                    }}
+                  >
                     <source src={cerebralVideo} type="video/mp4" />
                     Tu navegador no admite el elemento de video.
                   </video>

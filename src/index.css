@@ -528,11 +528,11 @@ p {
   margin-bottom: 1rem;
 }
 
-.cerebral .img {
+.bgYellowCuadrado {
   position: relative;
 }
 
-.cerebral .img::before {
+.bgYellowCuadrado::before {
   content: "";
   position: absolute;
   background-color: rgba(209, 255, 3, 1);
@@ -543,7 +543,19 @@ p {
   top: 50px;
 }
 
+.lima .bgYellowCuadrado::before {
+  width: 345px;
+  height: 476px;
+  top: 15px;
+}
 
+.ambrosoli .bgYellowCuadrado::before {
+  width: 342px;
+  height: 541px;
+  top: 60px;
+  left: 26%;
+  z-index: 0;
+}
 
 .header .redes a {
   padding: 1rem;
@@ -575,7 +587,9 @@ p {
 }
 
 @media (min-width: 767px) {
-
+  .lima .bgYellowCuadrado::before {
+    top: 120px;
+  }
 
   .footer-nt-nombre {
     font-size: 35px;
