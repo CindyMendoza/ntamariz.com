@@ -491,10 +491,12 @@ p {
   flex-direction: column;
   background-color: rgba(209, 255, 3, 1);
 }
-.line-vertical{
+
+.line-vertical {
   position: relative;
 }
-.line-vertical::before{
+
+.line-vertical::before {
   content: "";
   position: absolute;
   width: 5px;
@@ -502,9 +504,45 @@ p {
   height: 100%;
   right: 150%;
 }
-.margin-right-2rem{
+
+.margin-right-2rem {
   margin-right: 2rem;
 }
+
+.mattias-cover img {
+  max-width: 828px;
+  width: 100%;
+}
+
+.runa .img {
+  max-width: 770px;
+  width: 100%;
+}
+
+.cerebral .img {
+  max-width: 790px;
+  width: 100%;
+}
+
+.cerebral .img img {
+  margin-bottom: 1rem;
+}
+
+.cerebral .img {
+  position: relative;
+}
+
+.cerebral .img::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(209, 255, 3, 1);
+  width: 421px;
+  height: 469px;
+  left: -40px;
+  z-index: 0;
+  top: 117px;
+}
+
 .header .redes a {
   padding: 1rem;
 }
