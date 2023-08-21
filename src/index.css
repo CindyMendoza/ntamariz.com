@@ -536,12 +536,14 @@ p {
   content: "";
   position: absolute;
   background-color: rgba(209, 255, 3, 1);
-  width: 421px;
-  height: 469px;
-  left: -40px;
+  width: 221px;
+  height: 269px;
+  left: -20px;
   z-index: 0;
-  top: 117px;
+  top: 50px;
 }
+
+
 
 .header .redes a {
   padding: 1rem;
@@ -795,12 +797,25 @@ p {
     max-width: initial;
   }
 
-  .modal-header h1 span:last-child::before {
+  .mattias-cover .modal-header h1 span:last-child::before {
     width: 100%;
   }
 
   .modal-header h1 span:last-child {
     padding-left: 15px;
+  }
+}
+
+@media (min-width: 990px) {
+  .cerebral .img::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(209, 255, 3, 1);
+    width: 421px;
+    height: 469px;
+    left: -40px;
+    z-index: 0;
+    top: 117px;
   }
 }
 
