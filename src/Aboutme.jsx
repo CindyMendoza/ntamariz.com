@@ -4,7 +4,7 @@ import aboutmeImageNt from "./assets/images/aboutme-image-nt_v2.png";
 function Aboutme() {
   return (
     <>
-      <Container className="position-relative aboutme">
+      <Container className="aboutme">
         <Row className="">
           <Col className="" xs={12} lg={6}>
             <div className="contenedor-centrado-flex flex-direction-column align-items-center">

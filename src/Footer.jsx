@@ -3,12 +3,13 @@ import whatsappIcoNegro from "./assets/images/whatsapp-ico-negro.png";
 import instagramIcoNegro from "./assets/images/instagram-ico-negro.png";
 import linkedinIcoNegro from "./assets/images/linkedin-ico-negro.png";
 import facebookIcoNegro from "./assets/images/facebook-ico-negro.png";
+import mailIcoNegro from "./assets/images/mail-ico-negro.png";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
   return (
     <>
-      <footer>
         <Container
           fluid
           className="container-fluid nt-footer overflow-auto position-relative"
@@ -80,11 +81,18 @@ function Footer() {
                       alt="LinkedIn de Natalia Tamariz"
                     />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="http://" target="_blank" rel="noopener noreferrer">
                     <img
                       className="facebook"
                       src={facebookIcoNegro}
                       alt="Facebook de Natalia Tamariz"
+                    />
+                  </a> */}
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img
+                      className="mail"
+                      src={mailIcoNegro}
+                      alt="Mail de Natalia Tamariz"
                     />
                   </a>
                 </div>
@@ -92,7 +100,6 @@ function Footer() {
             </Col>
           </Row>
         </Container>
-      </footer>
     </>
   );
 }

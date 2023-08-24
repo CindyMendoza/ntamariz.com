@@ -335,7 +335,8 @@ p {
   content: url('./assets/images/facebook-ico-rosa.png');
 }
 
-.header .redes a:hover img.mail {
+.header .redes a:hover img.mail,
+.nt-footer .row-redes a:hover img.mail {
   content: url('./assets/images/mail-ico-rosa.png');
 }
 
@@ -366,13 +367,9 @@ p {
   align-self: baseline;
   border-radius: 50%;
   border: 2px solid black;
-}
-
-
-
-
-.modal-header h1 {
-  max-width: 150px;
+  top: 1rem;
+  position: absolute;
+  right: 1rem;
 }
 
 .modal-header h1 span:last-child {
@@ -447,6 +444,12 @@ p {
   width: 68px;
 }
 
+.artDirection-modal_parrafo {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header .cargo h1 {
   font-family: 'Starz 2016';
   font-size: 48px;
@@ -496,14 +499,16 @@ p {
   position: relative;
 }
 
-.line-vertical::before {
-  content: "";
+
+
+/* .line-vertical::before {
+  content: none;
   position: absolute;
   width: 5px;
   background-color: rgba(209, 255, 3, 1);
   height: 100%;
   right: 150%;
-}
+} */
 
 .margin-right-2rem {
   margin-right: 2rem;
@@ -536,26 +541,29 @@ p {
   content: "";
   position: absolute;
   background-color: rgba(209, 255, 3, 1);
-  width: 221px;
-  height: 269px;
+  width: 100%;
+  height: 95%;
   left: -20px;
   z-index: 0;
   top: 50px;
 }
 
-.lima .bgYellowCuadrado::before {
-  width: 345px;
-  height: 476px;
-  top: 15px;
+.lima .modal-content img {
+  z-index: 0;
+  position: relative;
 }
 
-.ambrosoli .bgYellowCuadrado::before {
+/*
+.lima .bgYellowCuadrado img{
+  width: 535px;
+} */
+/* .ambrosoli .bgYellowCuadrado::before {
   width: 342px;
   height: 541px;
   top: 60px;
   left: 26%;
   z-index: 0;
-}
+} */
 
 .header .redes a {
   padding: 1rem;
@@ -586,10 +594,36 @@ p {
   }
 }
 
-@media (min-width: 767px) {
-  .lima .bgYellowCuadrado::before {
-    top: 120px;
+@media (max-width: 992px) {
+  .artDirection-modal_sub-title span {
+    margin: 0 !important;
   }
+
+  .artDirection-modal_sub-title {
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .runa .artDirection-modal_sub-title {
+    width: 248px;
+  }
+}
+
+@media (min-width: 992px) {
+  .line-vertical::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: rgba(209, 255, 3, 1);
+    height: 100%;
+    right: 150%;
+  }
+}
+
+@media (min-width: 767px) {
+
 
   .footer-nt-nombre {
     font-size: 35px;
@@ -807,13 +841,11 @@ p {
     margin-top: -18px;
   }
 
-  .modal-header h1 {
-    max-width: initial;
-  }
 
-  .mattias-cover .modal-header h1 span:last-child::before {
+
+  /* .modal-header h1 span:last-child::before {
     width: 100%;
-  }
+  } */
 
   .modal-header h1 span:last-child {
     padding-left: 15px;
@@ -821,7 +853,7 @@ p {
 }
 
 @media (min-width: 990px) {
-  .cerebral .img::before {
+  /* .cerebral .img::before {
     content: "";
     position: absolute;
     background-color: rgba(209, 255, 3, 1);
@@ -830,7 +862,7 @@ p {
     left: -40px;
     z-index: 0;
     top: 117px;
-  }
+  } */
 }
 
 @media (min-width: 1400px) {

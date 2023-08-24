@@ -62,7 +62,7 @@ function Header() {
                 <img
                   className="mail"
                   src={mailIcoNegro}
-                  alt="Facebook de Natalia Tamariz"
+                  alt="Mail de Natalia Tamariz"
                 />
               </a>
             </div>

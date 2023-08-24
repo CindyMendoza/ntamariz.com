@@ -196,19 +196,13 @@ function Photography() {
           <div>
             <div className="contenedor-centrado-flex">
               <div className="bgYellowCuadrado">
-                <video
-                  controls
-                  style={{
-                    width: "100%",
-                    maxWidth: "458px",
-                    marginBottom: "1rem",
-                    position: "relative",
-                    zIndex: 0,
-                  }}
-                >
-                  <source src={limaVideoMdal} type="video/mp4" />
-                  Tu navegador no admite el elemento de video.
-                </video>
+                <div>
+                  <img
+                    src={photographySlider1}
+                    alt="Lima"
+                    className="lazyload img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -282,6 +276,10 @@ function Photography() {
                     // zIndex: 0,
                   }}
                 />
+              </div>
+            </div>
+            <div className="contenedor-centrado-flex">
+              <div>
                 <video
                   controls
                   style={{
@@ -295,6 +293,10 @@ function Photography() {
                   <source src={ambrosoliMp4} type="video/mp4" />
                   Tu navegador no admite el elemento de video.
                 </video>
+              </div>
+            </div>
+            <div className="contenedor-centrado-flex">
+              <div>
                 <img
                   src={ambrosoliPNG}
                   alt="Ambrosoli"
@@ -553,7 +555,9 @@ function Photography() {
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
             <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">Crudo impulso colectivo</span>
+              <span className="fondo-amarillo-titular">
+                Crudo impulso colectivo
+              </span>
             </h1>
           </div>
         </Modal.Header>

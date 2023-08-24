@@ -6,7 +6,7 @@
   "homepage": "https://cindymendoza.github.io/ntamariz.com",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/ntamariz.com/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
