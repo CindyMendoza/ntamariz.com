@@ -359,32 +359,6 @@ function Artdirection() {
                 <div>
                   <div>
                     <img
-                      src={sliderArtDirectionMtiasMakeUp}
-                      alt="MATIAS MAKE UP"
-                      className="lazyload"
-                      onClick={openModal}
-                      style={{ cursor: "pointer" }}
-                    />
-
-                    <h4>MATIAS MAKE UP</h4>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <img
-                      src={sliderArtDirectionRuna}
-                      alt="RUNA"
-                      className="lazyload"
-                      onClick={openModal2}
-                      style={{ cursor: "pointer" }}
-                    />
-
-                    <h4>RUNA</h4>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <img
                       src={sliderArtDirectionCerebral}
                       alt="Cerebral"
                       className="lazyload"
@@ -406,6 +380,32 @@ function Artdirection() {
                     />
 
                     <h4>Krylon</h4>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img
+                      src={sliderArtDirectionMtiasMakeUp}
+                      alt="MATIAS MAKE UP"
+                      className="lazyload"
+                      onClick={openModal}
+                      style={{ cursor: "pointer" }}
+                    />
+
+                    <h4>MATIAS MAKE UP</h4>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img
+                      src={sliderArtDirectionRuna}
+                      alt="RUNA"
+                      className="lazyload"
+                      onClick={openModal2}
+                      style={{ cursor: "pointer" }}
+                    />
+
+                    <h4>RUNA</h4>
                   </div>
                 </div>
               </Slider>
