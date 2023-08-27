@@ -15,25 +15,31 @@ import photographySlider5 from "./assets/images/rebirth.png";
 import photographySlider6 from "./assets/images/hiu-yan.png";
 import photographySlider7 from "./assets/images/genetic-nipulation.png";
 import photographySlider8 from "./assets/images/minico.png";
-import photographySlider9 from "./assets/images/javier-arnillas.png";
+import photographySlider9 from "./assets/images/javier-arnillas-v2.png";
 import photographySlider10 from "./assets/images/montserrat.png";
 import photographySlider11 from "./assets/images/dayana-valenzuela.png";
 import photographySlider12 from "./assets/images/crudo-impulso-colectivo.png";
+import photographySlider13 from "./assets/images/lola.png";
 
 import limaVideoMdal from "./assets/videos/lima-video-modal.mp4";
-import freakModal from "./assets/images/freak-modal.png";
+import freakModal from "./assets/images/freak-modal-v2.png";
 import ambrosoliGif from "./assets/gifs/ambrosoli.gif";
 import ambrosoliMp4 from "./assets/videos/ambrosoli.mp4";
 import ambrosoliPNG from "./assets/images/ambrosolipng.png";
-import baleshkaPriceModal from "./assets/images/baleshka-price-modal.png";
-import rebirthModal from "./assets/images/rebirth-modal.png";
-import hiuyanhModal from "./assets/images/hiuyan-modal.png";
+import baleshkaPriceModal from "./assets/images/baleshka-price-modal-1.jpg";
+import baleshkaPriceModal2 from "./assets/images/baleshka-price-modal-2.jpg";
+import baleshkaPriceModal3 from "./assets/images/baleshka-price-modal-3.jpg";
+import rebirthModal from "./assets/images/rebirth-v2.jpg";
+import hiuyanhModal from "./assets/images/hiuyan-1.jpg";
+import hiuyanhModal2 from "./assets/images/hiuyan-2.jpg";
+import hiuyanhModal3 from "./assets/images/hiuyan-3.jpg";
 import geneticManipulation from "./assets/images/genetic-manipulation.png";
-import minico from "./assets/images/minico.jpg";
-import javierArnillas from "./assets/images/javier-arnillas.jpg";
+import minico from "./assets/images/minico-2.jpg";
+import javierArnillas from "./assets/images/javier-arnillas-2.jpg";
 import monserrat from "./assets/images/monserrat.jpg";
-import dayanaValenzuelaModal from "./assets/images/dayana-valenzuela-modal.jpg";
+import dayanaValenzuelaModal from "./assets/images/dayana-valenzuela-2.jpg";
 import crudoImpulsoColectivo from "./assets/images/crudo-impulso-colectivo.jpg";
+import lola from "./assets/images/lola.jpg";
 
 function Photography() {
   const [showModal, setShowModal] = useState(false);
@@ -48,6 +54,7 @@ function Photography() {
   const [showModal10, setShowModal10] = useState(false);
   const [showModal11, setShowModal11] = useState(false);
   const [showModal12, setShowModal12] = useState(false);
+  const [showModal13, setShowModal13] = useState(false);
   const openModal = () => {
     setShowModal(true);
   };
@@ -118,7 +125,13 @@ function Photography() {
     setShowModal12(true);
   };
   const closeModal12 = () => {
-    setShowModal12(false);
+    setShowModal13(false);
+  };
+  const openModal13 = () => {
+    setShowModal13(true); 
+  };
+  const closeModal13 = () => {
+    setShowModal13(false);
   };
 
   const settings = {
@@ -187,8 +200,8 @@ function Photography() {
       <Modal className="lima" show={showModal} onHide={closeModal} size="xl">
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">Lima</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Lima
             </h1>
           </div>
         </Modal.Header>
@@ -218,20 +231,10 @@ function Photography() {
         size="xl"
       >
         <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">FREAK</span>
-            </h1>
-          </div>
+          <div className="contenedor-centrado-flex align-items-center width-100"></div>
         </Modal.Header>
         <Modal.Body className="p-5 pt-3">
           <div>
-            <div className="font-family-Galvji font-size-17px mb-4">
-              <p>
-                Portraits of Junior Galvez owner of Freak, peruvian clothing
-                brand for queer people.
-              </p>
-            </div>
             <div className="contenedor-centrado-flex">
               <div>
                 <img
@@ -255,13 +258,13 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">Ambrosoli</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Ambrosoli
             </h1>
           </div>
         </Modal.Header>
         <Modal.Body className="p-5 pt-3">
-          <div>
+          <div className="container-images">
             <div className="contenedor-centrado-flex">
               <div className="img text-align-center bgYellowCuadrado">
                 <img
@@ -270,7 +273,7 @@ function Photography() {
                   className="img-fluid lazyload "
                   style={{
                     width: "100%",
-                    maxWidth: "455px",
+                    maxWidth: "300px",
                     marginBottom: "1rem",
                     position: "relative",
                     // zIndex: 0,
@@ -284,7 +287,7 @@ function Photography() {
                   controls
                   style={{
                     width: "100%",
-                    maxWidth: "750px",
+                    maxWidth: "375px",
                     marginBottom: "1rem",
                     position: "relative",
                     // zIndex: 0,
@@ -301,6 +304,10 @@ function Photography() {
                   src={ambrosoliPNG}
                   alt="Ambrosoli"
                   className="img-fluid lazyload "
+                  style={{
+                    width: "100%",
+                    maxWidth: "320px",
+                  }}
                 />
               </div>
             </div>
@@ -318,8 +325,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">Baleshka price</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Baleshka price
             </h1>
           </div>
         </Modal.Header>
@@ -327,7 +334,7 @@ function Photography() {
           <div>
             <div className="font-family-Galvji font-size-17px mb-4 text-align-center">
               <p>
-                These portraits were taken for the book of Daggiana Peves named
+                These portraits were taken for the book of Daggiana Peves named <br></br>
                 “My name is Baleshka Price”.
               </p>
             </div>
@@ -335,6 +342,20 @@ function Photography() {
               <div className="img text-align-center ">
                 <img
                   src={baleshkaPriceModal}
+                  alt="Baleshka price"
+                  className="img-fluid lazyload "
+                />
+              </div>
+              <div className="img text-align-center ">
+                <img
+                  src={baleshkaPriceModal2}
+                  alt="Baleshka price"
+                  className="img-fluid lazyload "
+                />
+              </div>
+              <div className="img text-align-center ">
+                <img
+                  src={baleshkaPriceModal3}
                   alt="Baleshka price"
                   className="img-fluid lazyload "
                 />
@@ -354,8 +375,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">Rebirth</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Rebirth
             </h1>
           </div>
         </Modal.Header>
@@ -384,8 +405,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">HIU YAN</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              HIU YAN
             </h1>
           </div>
         </Modal.Header>
@@ -395,6 +416,20 @@ function Photography() {
               <div className="img text-align-center ">
                 <img
                   src={hiuyanhModal}
+                  alt="HIU YAN"
+                  className="img-fluid lazyload "
+                />
+              </div>
+              <div className="img text-align-center ">
+                <img
+                  src={hiuyanhModal2}
+                  alt="HIU YAN"
+                  className="img-fluid lazyload "
+                />
+              </div>
+              <div className="img text-align-center ">
+                <img
+                  src={hiuyanhModal3}
                   alt="HIU YAN"
                   className="img-fluid lazyload "
                 />
@@ -414,10 +449,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">
-                Genetic manipulation
-              </span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Genetic manipulation
             </h1>
           </div>
         </Modal.Header>
@@ -446,8 +479,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">minico</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              minico
             </h1>
           </div>
         </Modal.Header>
@@ -500,8 +533,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">Montserrat</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Montserrat
             </h1>
           </div>
         </Modal.Header>
@@ -554,10 +587,8 @@ function Photography() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">
-                Crudo impulso colectivo
-              </span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              Crudo impulso colectivo
             </h1>
           </div>
         </Modal.Header>
@@ -568,6 +599,35 @@ function Photography() {
                 <img
                   src={crudoImpulsoColectivo}
                   alt="Crudo impulso colectivo"
+                  className="img-fluid lazyload "
+                />
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+      {/* lola */}
+
+      <Modal
+        className="lola"
+        show={showModal13}
+        onHide={closeModal13}
+        size="xl"
+      >
+        <Modal.Header className="p-5 pb-0" closeButton>
+          <div className="contenedor-centrado-flex align-items-center width-100">
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              lola
+            </h1>
+          </div>
+        </Modal.Header>
+        <Modal.Body className="p-5 pt-3">
+          <div>
+            <div className="contenedor-centrado-flex">
+              <div className="img text-align-center ">
+                <img
+                  src={lola}
+                  alt="lola"
                   className="img-fluid lazyload "
                 />
               </div>
@@ -666,18 +726,6 @@ function Photography() {
                 <div>
                   <div>
                     <img
-                      src={photographySlider7}
-                      alt="Genetic manipulation"
-                      className="lazyload"
-                      onClick={openModal7}
-                      style={{ cursor: "pointer" }}
-                    />
-                    <h4>Genetic manipulation</h4>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <img
                       src={photographySlider8}
                       alt="Minico"
                       className="lazyload"
@@ -687,6 +735,19 @@ function Photography() {
                     <h4>Minico</h4>
                   </div>
                 </div>
+                <div>
+                  <div>
+                    <img
+                      src={photographySlider7}
+                      alt="Genetic manipulation"
+                      className="lazyload"
+                      onClick={openModal7}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h4>Genetic manipulation</h4>
+                  </div>
+                </div>
+
                 <div>
                   <div>
                     <img
@@ -733,6 +794,18 @@ function Photography() {
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Crudo impulso colectivo</h4>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img
+                      src={photographySlider13}
+                      alt="Crudo impulso colectivo"
+                      className="lazyload"
+                      onClick={openModal13}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h4>Lola</h4>
                   </div>
                 </div>
               </Slider>

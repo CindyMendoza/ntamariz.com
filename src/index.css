@@ -35,6 +35,21 @@
   position: relative;
 }
 
+.Baleshkaprice .contenedor-centrado-flex {
+  flex-wrap: wrap;
+}
+
+.Baleshkaprice .contenedor-centrado-flex>div {
+  margin-bottom: 15px;
+}
+
+.hiuyan .contenedor-centrado-flex {
+  flex-wrap: wrap;
+}
+.hiuyan .contenedor-centrado-flex > div {
+  margin-bottom: 15px;
+}
+
 .art-direction::before {
   content: "";
   position: absolute;
@@ -542,7 +557,7 @@ p {
   position: absolute;
   background-color: rgba(209, 255, 3, 1);
   width: 100%;
-  height: 95%;
+  height: 87%;
   left: -20px;
   z-index: 0;
   top: 50px;
@@ -551,6 +566,8 @@ p {
 .lima .modal-content img {
   z-index: 0;
   position: relative;
+  width: 100%;
+  max-width: 478px;
 }
 
 /*
@@ -564,6 +581,15 @@ p {
   left: 26%;
   z-index: 0;
 } */
+.ambrosoli .container-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ambrosoli .container-images>div {
+  margin-bottom: 20px;
+}
 
 .header .redes a {
   padding: 1rem;
@@ -620,10 +646,32 @@ p {
     height: 100%;
     right: 150%;
   }
+  .hiuyan .modal-body .contenedor-centrado-flex{
+    justify-content: space-between;
+  }
+  .Baleshkaprice .contenedor-centrado-flex {
+    justify-content: space-between;
+  }
+
+  .Baleshkaprice .contenedor-centrado-flex>div:last-child {
+    margin-left: auto;
+  }
+
+  .ambrosoli .container-images {
+    justify-content: left;
+  }
+
+  .ambrosoli .container-images>div {
+    margin-right: 12px;
+  }
 }
 
 @media (min-width: 767px) {
 
+  .header .contenedor-centrado-flex {
+    margin-top: 95px !important;
+    margin-left: 90px;
+  }
 
   .footer-nt-nombre {
     font-size: 35px;
@@ -826,7 +874,7 @@ p {
     width: 100%;
   }
 
-  .header::after {
+  /* .header::after {
     content: "";
     position: absolute;
     bottom: -62%;
@@ -835,7 +883,7 @@ p {
     height: 586px;
     background-color: rgba(209, 255, 3, 1);
     z-index: 1;
-  }
+  } */
 
   .nt-footer .row-nombres h2 {
     margin-top: -18px;
@@ -870,5 +918,12 @@ p {
   .photography.container,
   .art-direction.container {
     max-width: 1500px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .Baleshkaprice .contenedor-centrado-flex>div:last-child {
+    margin-left: inherit;
   }
 }

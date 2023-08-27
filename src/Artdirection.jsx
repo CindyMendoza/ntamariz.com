@@ -133,9 +133,8 @@ function Artdirection() {
         <Modal.Header className="p-5 pb-0 flex-column" closeButton>
           <div>
             <div className="contenedor-centrado-flex tex flex-direction-column text-align-center">
-              <h1 className="font-family-Starz-2016 ">
-                <span className="fondo-amarillo-titular">MATTIAS</span>
-                <span className="fondo-amarillo-titular">cover</span>
+              <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+              MATTIAS cover
               </h1>
             </div>
           </div>
@@ -177,8 +176,8 @@ function Artdirection() {
       <Modal className="runa" show={showModal2} onHide={closeModal2} size="xl">
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">RUNA</span>
+            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
+            RUNA
             </h1>
           </div>
         </Modal.Header>
@@ -238,8 +237,7 @@ function Artdirection() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">cerebral</span>
+            <h1 className="font-family-Starz-2016 ">cerebral
             </h1>
           </div>
         </Modal.Header>
@@ -308,8 +306,7 @@ function Artdirection() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">
-              <span className="fondo-amarillo-titular">KRYLON</span>
+            <h1 className="font-family-Starz-2016 ">KRYLON
             </h1>
           </div>
         </Modal.Header>
@@ -386,13 +383,13 @@ function Artdirection() {
                   <div>
                     <img
                       src={sliderArtDirectionMtiasMakeUp}
-                      alt="MATIAS MAKE UP"
+                      alt="MATTIAS COVER"
                       className="lazyload"
                       onClick={openModal}
                       style={{ cursor: "pointer" }}
                     />
 
-                    <h4>MATIAS MAKE UP</h4>
+                    <h4>MATTIAS COVER</h4>
                   </div>
                 </div>
                 <div>

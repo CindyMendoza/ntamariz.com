@@ -28,7 +28,7 @@ function Header() {
             </div>
 
             <div className="redes ">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=14704280663" target="_blank" rel="noopener noreferrer">
                 <img
                   className="whatsapp"
                   src={whatsappIcoNegro}
@@ -58,7 +58,7 @@ function Header() {
                   alt="LinkedIn de Natalia Tamariz"
                 />
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:nataliatamarizfotografia@gmail.com" target="_blank" rel="noopener noreferrer">
                 <img
                   className="mail"
                   src={mailIcoNegro}
