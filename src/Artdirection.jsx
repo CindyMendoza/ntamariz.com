@@ -11,8 +11,8 @@ import sliderArtDirectionKrylon from "./assets/images/slider-art-direction-krylo
 import sliderArtDirectionMtiasMakeUp from "./assets/images/slider-art-direction-matias-make-up.png";
 import sliderArtDirectionRuna from "./assets/images/slider-art-direction-runa.png";
 import imagenModal from "./assets/images/imagen-modal.jpg";
-import cerebral2 from "./assets/images/cerebral-modal-2.png";
-import cerebral3 from "./assets/images/cerebral-modal-3.png";
+import cerebral1 from "./assets/images/cerebral-modal-v2.jpg";
+// import cerebral3 from "./assets/images/cerebral-modal-3.png";
 import krylon from "./assets/images/krylon.png";
 
 import videoThumbnail from "./assets/images/runa-modal.png";
@@ -134,7 +134,7 @@ function Artdirection() {
           <div>
             <div className="contenedor-centrado-flex tex flex-direction-column text-align-center">
               <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              MATTIAS cover
+                MATTIAS cover
               </h1>
             </div>
           </div>
@@ -177,7 +177,7 @@ function Artdirection() {
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
             <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-            RUNA
+              RUNA
             </h1>
           </div>
         </Modal.Header>
@@ -237,8 +237,7 @@ function Artdirection() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">cerebral
-            </h1>
+            <h1 className="font-family-Starz-2016 ">cerebral</h1>
           </div>
         </Modal.Header>
         <Modal.Body className="p-5 pt-3">
@@ -262,12 +261,20 @@ function Artdirection() {
             </div>
             <div className="contenedor-centrado-flex">
               <div>
-                <div className="img bgYellowCuadrado">
+                <div>
+                  <img
+                    src={cerebral1}
+                    alt="cerebral"
+                    className="img-fluid lazyload position-relative"
+                  />
+                </div>
+                
+                <div className=" bgYellowCuadrado">
                   <video
                     controls
                     style={{
                       width: "100%",
-                      maxWidth: "752px",
+                      maxWidth: "750px",
                       marginBottom: "1rem",
                       position: "relative",
                       zIndex: 0,
@@ -276,20 +283,6 @@ function Artdirection() {
                     <source src={cerebralVideo} type="video/mp4" />
                     Tu navegador no admite el elemento de video.
                   </video>
-                </div>
-                <div>
-                  <img
-                    src={cerebral2}
-                    alt="cerebral"
-                    className="img-fluid lazyload position-relative"
-                  />
-                </div>
-                <div>
-                  <img
-                    src={cerebral3}
-                    alt="cerebral"
-                    className="img-fluid lazyload position-relative"
-                  />
                 </div>
               </div>
             </div>
@@ -306,8 +299,7 @@ function Artdirection() {
       >
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">KRYLON
-            </h1>
+            <h1 className="font-family-Starz-2016 ">KRYLON</h1>
           </div>
         </Modal.Header>
         <Modal.Body className="p-5 pt-3">

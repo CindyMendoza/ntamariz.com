@@ -125,7 +125,7 @@ function Photography() {
     setShowModal12(true);
   };
   const closeModal12 = () => {
-    setShowModal13(false);
+    setShowModal12(false);
   };
   const openModal13 = () => {
     setShowModal13(true); 
