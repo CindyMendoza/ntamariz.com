@@ -628,13 +628,7 @@ p {
   font-weight: 700;
 }
 
-@media (min-width: 430px) {
-  .header {
-    background-image: url('./assets/images/header-imagen.png');
-    background-position: right 235px;
-    /* background-size: 100%; */
-  }
-}
+
 
 @media (max-width: 992px) {
   .artDirection-modal_sub-title span {
@@ -687,7 +681,16 @@ p {
     margin-right: 12px;
   }
 }
-
+@media (min-width: 430px){
+  .header {
+    background-image: url('./assets/images/header-imagen-v2.jpg');
+    /* padding-bottom: 60vw;
+    background-size: cover;
+    background-position: bottom; */
+    background-size: cover;
+    background-position: right;
+  }
+}
 @media (min-width: 767px) {
 
   .header .contenedor-centrado-flex {
@@ -850,10 +853,10 @@ p {
 
 
   .header {
-    background-image: url('./assets/images/header-imagen.png');
-    padding-bottom: 872px;
+    background-image: url('./assets/images/header-imagen-v2.jpg');
+    padding-bottom: 60vw;
     background-size: cover;
-    background-position: top center;
+    background-position: bottom;
   }
 
   .header .logo img {
