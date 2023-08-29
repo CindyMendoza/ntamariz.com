@@ -39,7 +39,9 @@ import javierArnillas from "./assets/images/javier-arnillas-2.jpg";
 import monserrat from "./assets/images/monserrat.jpg";
 import dayanaValenzuelaModal from "./assets/images/dayana-valenzuela-2.jpg";
 import crudoImpulsoColectivo from "./assets/images/crudo-impulso-colectivo.jpg";
-import lola from "./assets/images/lola.jpg";
+import lola1 from "./assets/images/lola-v2.jpg";
+import lola2 from "./assets/gifs/lola-ojos.gif";
+import lola3 from "./assets/gifs/lola-telefono.gif";
 
 function Photography() {
   const [showModal, setShowModal] = useState(false);
@@ -128,7 +130,7 @@ function Photography() {
     setShowModal12(false);
   };
   const openModal13 = () => {
-    setShowModal13(true); 
+    setShowModal13(true);
   };
   const closeModal13 = () => {
     setShowModal13(false);
@@ -334,7 +336,8 @@ function Photography() {
           <div>
             <div className="font-family-Galvji font-size-17px mb-4 text-align-center">
               <p>
-                These portraits were taken for the book of Daggiana Peves named <br></br>
+                These portraits were taken for the book of Daggiana Peves named{" "}
+                <br></br>
                 “My name is Baleshka Price”.
               </p>
             </div>
@@ -606,6 +609,7 @@ function Photography() {
           </div>
         </Modal.Body>
       </Modal>
+
       {/* lola */}
 
       <Modal
@@ -625,11 +629,25 @@ function Photography() {
           <div>
             <div className="contenedor-centrado-flex">
               <div className="img text-align-center ">
-                <img
-                  src={lola}
-                  alt="lola"
-                  className="img-fluid lazyload "
-                />
+                <div className="fondo-amarillo-titular">
+                  <img
+                    src={lola1}
+                    alt="lola"
+                    className="img-fluid lazyload "
+                  />
+                </div>
+
+                <div>
+                  <img src={lola2} alt="lola" className="img-fluid lazyload " />
+                </div>
+
+                <div className="fondo-amarillo-titular">
+                  <img
+                    src={lola3}
+                    alt="lola"
+                    className="img-fluid lazyload "
+                  />
+                </div>
               </div>
             </div>
           </div>
