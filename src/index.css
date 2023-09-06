@@ -32,7 +32,7 @@
 }
 
 .lola .modal-body .img img {
-  max-width: 750px;
+  max-width: 450px;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -57,11 +57,11 @@
   margin-bottom: 15px;
 }
 
-.hiuyan .contenedor-centrado-flex {
+.hiuyan .contenedor-centrado-flex, .crudo-impulso-colectivo .contenedor-centrado-flex{
   flex-wrap: wrap;
 }
 
-.hiuyan .contenedor-centrado-flex>div {
+.hiuyan .contenedor-centrado-flex>div,.crudo-impulso-colectivo .contenedor-centrado-flex>div {
   margin-bottom: 15px;
 }
 
@@ -675,7 +675,7 @@ p {
     right: 150%;
   }
 
-  .hiuyan .modal-body .contenedor-centrado-flex {
+  .hiuyan .modal-body .contenedor-centrado-flex, .crudo-impulso-colectivo .modal-body .contenedor-centrado-flex{
     justify-content: space-between;
   }
 

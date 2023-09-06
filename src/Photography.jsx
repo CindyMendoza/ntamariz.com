@@ -24,7 +24,7 @@ import photographySlider13 from "./assets/images/lola.png";
 import limaVideoMdal from "./assets/videos/lima-video-modal.mp4";
 import freakModal from "./assets/images/freak-modal-v2.png";
 import ambrosoliGif from "./assets/gifs/ambrosoli.gif";
-import ambrosoliMp4 from "./assets/videos/ambrosoli.mp4";
+import ambrosoliMp4 from "./assets/gifs/ambrosoli-gif-2.gif";
 import ambrosoliPNG from "./assets/images/ambrosolipng.png";
 import baleshkaPriceModal from "./assets/images/baleshka-price-modal-1.jpg";
 import baleshkaPriceModal2 from "./assets/images/baleshka-price-modal-2.jpg";
@@ -38,7 +38,9 @@ import minico from "./assets/images/minico-2.jpg";
 import javierArnillas from "./assets/images/javier-arnillas-2.jpg";
 import monserrat from "./assets/images/monserrat.jpg";
 import dayanaValenzuelaModal from "./assets/images/dayana-valenzuela-2.jpg";
-import crudoImpulsoColectivo from "./assets/images/crudo-impulso-colectivo.jpg";
+import crudoImpulsoColectivo from "./assets/images/crudo-impulso-colectivo-1.jpg";
+import crudoImpulsoColectivo2 from "./assets/images/crudo-impulso-colectivo-2.jpg";
+import crudoImpulsoColectivo3 from "./assets/images/crudo-impulso-colectivo-3.jpg";
 import lola1 from "./assets/images/lola-v2.jpg";
 import lola2 from "./assets/gifs/lola-ojos.gif";
 import lola3 from "./assets/gifs/lola-telefono.gif";
@@ -284,8 +286,20 @@ function Photography() {
               </div>
             </div>
             <div className="contenedor-centrado-flex">
-              <div>
-                <video
+              <div className="img text-align-center">
+                <img
+                    src={ambrosoliMp4}
+                    alt="Ambrosoli"
+                    className="img-fluid lazyload "
+                    style={{
+                      width: "100%",
+                      maxWidth: "375px",
+                      marginBottom: "1rem",
+                      position: "relative",
+                      // zIndex: 0,
+                    }}
+                  />
+                {/* <video
                   controls
                   style={{
                     width: "100%",
@@ -297,7 +311,7 @@ function Photography() {
                 >
                   <source src={ambrosoliMp4} type="video/mp4" />
                   Tu navegador no admite el elemento de video.
-                </video>
+                </video> */}
               </div>
             </div>
             <div className="contenedor-centrado-flex">
@@ -597,15 +611,41 @@ function Photography() {
         </Modal.Header>
         <Modal.Body className="p-5 pt-3">
           <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={crudoImpulsoColectivo}
-                  alt="Crudo impulso colectivo"
-                  className="img-fluid lazyload "
-                />
-              </div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={crudoImpulsoColectivo}
+                alt="Crudo impulso colectivo"
+                className="img-fluid lazyload "
+                style={{
+                  width: "100%",
+                  maxWidth: "316px",
+                }}
+              />
             </div>
+            <div className="img text-align-center ">
+              <img
+                src={crudoImpulsoColectivo2}
+                alt="Crudo impulso colectivo"
+                className="img-fluid lazyload "
+                style={{
+                  width: "100%",
+                  maxWidth: "316px",
+                }}
+              />
+            </div>
+            <div className="img text-align-center ">
+              <img
+                src={crudoImpulsoColectivo3}
+                alt="Crudo impulso colectivo"
+                className="img-fluid lazyload "
+                style={{
+                  width: "100%",
+                  maxWidth: "316px",
+                }}
+              />
+            </div>
+          </div>
           </div>
         </Modal.Body>
       </Modal>
