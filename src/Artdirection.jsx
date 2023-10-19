@@ -20,10 +20,8 @@ import videoFile from "./assets/videos/kevinvideoruna.mp4";
 import cerebralVideo from "./assets/videos/cerebral-video.mp4";
 
 function Artdirection() {
-  const [showModal, setShowModal] = useState(false);
-  const [showModal2, setShowModal2] = useState(false);
-  const [showModal3, setShowModal3] = useState(false);
-  const [showModal4, setShowModal4] = useState(false);
+  const [modalToShow, setModalToShow] = useState(null);
+
   const [videoVisible, setVideoVisible] = useState(false);
 
   const openVideo = () => {
@@ -35,30 +33,12 @@ function Artdirection() {
     setVideoVisible(!videoVisible);
   };
 
-  const openModal = () => {
-    setShowModal(true);
+  const openModal = (modal) => {
+    setModalToShow(modal);
   };
-  const openModal2 = () => {
-    setShowModal2(true);
-  };
-  const openModal3 = () => {
-    setShowModal3(true);
-  };
-  const openModal4 = () => {
-    setShowModal4(true);
-  };
-
+  
   const closeModal = () => {
-    setShowModal(false);
-  };
-  const closeModal2 = () => {
-    setShowModal2(false);
-  };
-  const closeModal3 = () => {
-    setShowModal3(false);
-  };
-  const closeModal4 = () => {
-    setShowModal4(false);
+    setModalToShow(null);
   };
 
   const settings = {
@@ -126,8 +106,7 @@ function Artdirection() {
 
       <Modal
         className="mattias-cover"
-        show={showModal}
-        onHide={closeModal}
+        show={modalToShow === "mattias-cover"} onHide={closeModal}
         size="xl"
       >
         <Modal.Header className="p-5 pb-0 flex-column" closeButton>
@@ -173,7 +152,9 @@ function Artdirection() {
 
       {/* runa */}
 
-      <Modal className="runa" show={showModal2} onHide={closeModal2} size="xl">
+      <Modal className="runa" 
+      show={modalToShow === "runa"} onHide={closeModal} 
+      size="xl">
         <Modal.Header className="p-5 pb-0" closeButton>
           <div className="contenedor-centrado-flex align-items-center width-100">
             <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
@@ -231,8 +212,7 @@ function Artdirection() {
       {/* Cerebral */}
       <Modal
         className="cerebral"
-        show={showModal3}
-        onHide={closeModal3}
+        show={modalToShow === "cerebral"} onHide={closeModal}
         size="xl"
       >
         <Modal.Header className="p-5 pb-0" closeButton>
@@ -293,8 +273,7 @@ function Artdirection() {
       {/* Krylon */}
       <Modal
         className="KRYLON"
-        show={showModal4}
-        onHide={closeModal4}
+        show={modalToShow === "krylon"} onHide={closeModal}
         size="xl"
       >
         <Modal.Header className="p-5 pb-0" closeButton>
@@ -351,7 +330,7 @@ function Artdirection() {
                       src={sliderArtDirectionCerebral}
                       alt="Cerebral"
                       className="lazyload"
-                      onClick={openModal3}
+                      onClick={() => openModal('cerebral')}
                       style={{ cursor: "pointer" }}
                     />
 
@@ -364,7 +343,7 @@ function Artdirection() {
                       src={sliderArtDirectionKrylon}
                       alt="Krylon"
                       className="lazyload"
-                      onClick={openModal4}
+                      onClick={() => openModal('krylon')}
                       style={{ cursor: "pointer" }}
                     />
 
@@ -377,7 +356,7 @@ function Artdirection() {
                       src={sliderArtDirectionMtiasMakeUp}
                       alt="MATTIAS COVER"
                       className="lazyload"
-                      onClick={openModal}
+                      onClick={() => openModal('mattias-cover')}
                       style={{ cursor: "pointer" }}
                     />
 
@@ -390,10 +369,9 @@ function Artdirection() {
                       src={sliderArtDirectionRuna}
                       alt="RUNA"
                       className="lazyload"
-                      onClick={openModal2}
+                      onClick={() => openModal('runa')}
                       style={{ cursor: "pointer" }}
                     />
-
                     <h4>RUNA</h4>
                   </div>
                 </div>
