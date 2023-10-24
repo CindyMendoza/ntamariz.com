@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,9 +19,9 @@ import krylon from "./assets/images/krylon.png";
 import videoThumbnail from "./assets/images/runa-modal.png";
 import videoFile from "./assets/videos/kevinvideoruna.mp4";
 import cerebralVideo from "./assets/videos/cerebral-video.mp4";
-
+import { useModal } from "./useModal";
 function Artdirection() {
-  const [modalToShow, setModalToShow] = useState(null);
+  const { modalToShow, openModal, closeModal } = useModal();
 
   const [videoVisible, setVideoVisible] = useState(false);
 
@@ -31,14 +32,6 @@ function Artdirection() {
 
   const toggleVideo = () => {
     setVideoVisible(!videoVisible);
-  };
-
-  const openModal = (modal) => {
-    setModalToShow(modal);
-  };
-  
-  const closeModal = () => {
-    setModalToShow(null);
   };
 
   const settings = {
@@ -106,7 +99,8 @@ function Artdirection() {
 
       <Modal
         className="mattias-cover"
-        show={modalToShow === "mattias-cover"} onHide={closeModal}
+        show={modalToShow === "mattias-cover"} 
+        onHide={closeModal}
         size="xl"
       >
         <Modal.Header className="p-5 pb-0 flex-column" closeButton>
