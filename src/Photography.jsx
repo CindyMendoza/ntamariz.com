@@ -115,6 +115,7 @@ function Photography() {
         title="Lima"
         modalToShow={modalToShow === "lima"}
         closeModal={closeModal}
+        classModal="lima"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -136,6 +137,7 @@ function Photography() {
         title=""
         modalToShow={modalToShow === "freak"}
         closeModal={closeModal}
+        classModal="freakModal"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -155,6 +157,7 @@ function Photography() {
         title="Ambrosoli"
         modalToShow={modalToShow === "ambrosoli"}
         closeModal={closeModal}
+        classModal="ambrosoli"
       >
         <div className="container-images">
           <div className="contenedor-centrado-flex">
@@ -208,6 +211,7 @@ function Photography() {
         title="Baleshka price"
         modalToShow={modalToShow === "baleshka-price"}
         closeModal={closeModal}
+        classModal="Baleshkaprice"
       >
         <div>
           <div className="font-family-Galvji font-size-17px mb-4 text-align-center">
@@ -248,6 +252,7 @@ function Photography() {
         title="Rebirth"
         modalToShow={modalToShow === "rebirth"}
         closeModal={closeModal}
+        classModal="rebirth"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -267,6 +272,7 @@ function Photography() {
         title="HIU YAN"
         modalToShow={modalToShow === "hiuyan"}
         closeModal={closeModal}
+        classModal="hiuyan"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -300,6 +306,7 @@ function Photography() {
         title="Genetic manipulation"
         modalToShow={modalToShow === "genetic-manipulation"}
         closeModal={closeModal}
+        classModal="genetic-manipulation"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -319,6 +326,7 @@ function Photography() {
         title="minico"
         modalToShow={modalToShow === "minico"}
         closeModal={closeModal}
+        classModal="minico"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -334,6 +342,7 @@ function Photography() {
         title=" "
         modalToShow={modalToShow === "javier-arnillas"}
         closeModal={closeModal}
+        classModal="javier-arnillas"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -354,6 +363,7 @@ function Photography() {
         title="Montserrat"
         modalToShow={modalToShow === "montserrat"}
         closeModal={closeModal}
+        classModal="Montserrat"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -373,6 +383,7 @@ function Photography() {
         title="Montserrat"
         modalToShow={modalToShow === "dayana-valenzuela"}
         closeModal={closeModal}
+        classModal="dayana-valenzuela"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -392,6 +403,7 @@ function Photography() {
         title="Crudo impulso colectivo"
         modalToShow={modalToShow === "crudo-impulso-colectivo"}
         closeModal={closeModal}
+        classModal="crudo-impulso-colectivo"
       >
         <div>
           <div className="contenedor-centrado-flex">
@@ -437,6 +449,7 @@ function Photography() {
         title="lola"
         modalToShow={modalToShow === "lola"}
         closeModal={closeModal}
+        classModal="lola"
       >
         <div>
           <div className="contenedor-centrado-flex">

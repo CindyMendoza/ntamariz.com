@@ -40,6 +40,7 @@
 .lola .modal-body .img .fondo-amarillo-titular:first-child::before {
   left: -15px;
 }
+
 .lola .modal-body .img .fondo-amarillo-titular:last-child:before {
   top: -15px;
   height: 104%;
@@ -57,11 +58,13 @@
   margin-bottom: 15px;
 }
 
-.hiuyan .contenedor-centrado-flex, .crudo-impulso-colectivo .contenedor-centrado-flex{
+.hiuyan .contenedor-centrado-flex,
+.crudo-impulso-colectivo .contenedor-centrado-flex {
   flex-wrap: wrap;
 }
 
-.hiuyan .contenedor-centrado-flex>div,.crudo-impulso-colectivo .contenedor-centrado-flex>div {
+.hiuyan .contenedor-centrado-flex>div,
+.crudo-impulso-colectivo .contenedor-centrado-flex>div {
   margin-bottom: 15px;
 }
 
@@ -420,6 +423,7 @@ p {
   letter-spacing: 0em;
   text-align: left;
   margin-top: 8px;
+  text-transform: uppercase;
 }
 
 #slider-photography h1 {
@@ -675,17 +679,20 @@ p {
     right: 150%;
   }
 
-  .hiuyan .modal-body .contenedor-centrado-flex, .crudo-impulso-colectivo .modal-body .contenedor-centrado-flex{
+  .hiuyan .modal-body .contenedor-centrado-flex,
+  .crudo-impulso-colectivo .modal-body .contenedor-centrado-flex {
     justify-content: space-between;
   }
 
-  .Baleshkaprice .contenedor-centrado-flex {
+  .Baleshkaprice .modal-body .contenedor-centrado-flex {
     justify-content: space-between;
   }
 
   .Baleshkaprice .contenedor-centrado-flex>div:last-child {
     margin-left: auto;
   }
+
+ 
 
   .ambrosoli .container-images {
     justify-content: left;
@@ -942,12 +949,13 @@ p {
 }
 
 @media (min-width: 990px) {
-  .header{
+  .header {
     padding-bottom: 40vw;
   }
 }
+
 @media (min-width: 2092px) {
-  .header{
+  .header {
     padding-bottom: 50vw;
   }
 }

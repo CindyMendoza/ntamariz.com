@@ -101,6 +101,7 @@ function Artdirection() {
         title="MATTIAS cover"
         modalToShow={modalToShow === "mattias-cover"}
         closeModal={closeModal}
+        classModal="mattias-cover"
       >
         <div>
           <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
@@ -137,6 +138,7 @@ function Artdirection() {
         title="RUNA"
         modalToShow={modalToShow === "runa"}
         closeModal={closeModal}
+        classModal="runa"
       >
         <div>
           <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
@@ -188,6 +190,7 @@ function Artdirection() {
         title="Cerebral"
         modalToShow={modalToShow === "cerebral"}
         closeModal={closeModal}
+        classModal="cerebral"
       >
         <div>
           <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
@@ -242,6 +245,7 @@ function Artdirection() {
         title="KRYLON"
         modalToShow={modalToShow === "krylon"}
         closeModal={closeModal}
+        classModal="krylon"
       >
         <div>
           <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
