@@ -44,100 +44,11 @@ import crudoImpulsoColectivo3 from "./assets/images/crudo-impulso-colectivo-3.jp
 import lola1 from "./assets/images/lola-v2.jpg";
 import lola2 from "./assets/gifs/lola-ojos.gif";
 import lola3 from "./assets/gifs/lola-telefono.gif";
+import { useModal } from "./useModal";
+import { CustomModal } from "./customModal";
 
 function Photography() {
-  const [showModal, setShowModal] = useState(false);
-  const [showModal2, setShowModal2] = useState(false);
-  const [showModal3, setShowModal3] = useState(false);
-  const [showModal4, setShowModal4] = useState(false);
-  const [showModal5, setShowModal5] = useState(false);
-  const [showModal6, setShowModal6] = useState(false);
-  const [showModal7, setShowModal7] = useState(false);
-  const [showModal8, setShowModal8] = useState(false);
-  const [showModal9, setShowModal9] = useState(false);
-  const [showModal10, setShowModal10] = useState(false);
-  const [showModal11, setShowModal11] = useState(false);
-  const [showModal12, setShowModal12] = useState(false);
-  const [showModal13, setShowModal13] = useState(false);
-  const openModal = () => {
-    setShowModal(true);
-  };
-  const closeModal = () => {
-    setShowModal(false);
-  };
-  const openModal2 = () => {
-    setShowModal2(true);
-  };
-  const closeModal2 = () => {
-    setShowModal2(false);
-  };
-  const openModal3 = () => {
-    setShowModal3(true);
-  };
-  const closeModal3 = () => {
-    setShowModal3(false);
-  };
-  const openModal4 = () => {
-    setShowModal4(true);
-  };
-  const closeModal4 = () => {
-    setShowModal4(false);
-  };
-  const openModal5 = () => {
-    setShowModal5(true);
-  };
-  const closeModal5 = () => {
-    setShowModal5(false);
-  };
-  const openModal6 = () => {
-    setShowModal6(true);
-  };
-  const closeModal6 = () => {
-    setShowModal6(false);
-  };
-  const openModal7 = () => {
-    setShowModal7(true);
-  };
-  const closeModal7 = () => {
-    setShowModal7(false);
-  };
-  const openModal8 = () => {
-    setShowModal8(true);
-  };
-  const closeModal8 = () => {
-    setShowModal8(false);
-  };
-  const openModal9 = () => {
-    setShowModal9(true);
-  };
-  const closeModal9 = () => {
-    setShowModal9(false);
-  };
-  const openModal10 = () => {
-    setShowModal10(true);
-  };
-  const closeModal10 = () => {
-    setShowModal10(false);
-  };
-  const openModal11 = () => {
-    setShowModal11(true);
-  };
-  const closeModal11 = () => {
-    setShowModal11(false);
-  };
-  const openModal12 = () => {
-    setShowModal12(true);
-  };
-  const closeModal12 = () => {
-    setShowModal12(false);
-  };
-  const openModal13 = () => {
-    setShowModal13(true);
-  };
-  const closeModal13 = () => {
-    setShowModal13(false);
-  };
-
+  const { modalToShow, openModal, closeModal } = useModal();
   const settings = {
     dots: false,
     infinite: false,
@@ -200,417 +111,289 @@ function Photography() {
   return (
     <>
       {/* lima */}
-
-      <Modal className="lima" show={showModal} onHide={closeModal} size="xl">
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Lima
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="bgYellowCuadrado">
-                <div>
-                  <img
-                    src={photographySlider1}
-                    alt="Lima"
-                    className="lazyload img-fluid"
-                  />
-                </div>
+      <CustomModal
+        title="Lima"
+        modalToShow={modalToShow === "lima"}
+        closeModal={closeModal}
+      >
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="bgYellowCuadrado">
+              <div>
+                <img
+                  src={photographySlider1}
+                  alt="Lima"
+                  className="lazyload img-fluid"
+                />
               </div>
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* freakModal */}
-
-      <Modal
-        className="freakModal"
-        show={showModal2}
-        onHide={closeModal2}
-        size="xl"
+      <CustomModal
+        title=""
+        modalToShow={modalToShow === "freak"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100"></div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div>
-                <img
-                  src={freakModal}
-                  alt="FREAK"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div>
+              <img
+                src={freakModal}
+                alt="FREAK"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Ambrosoli */}
-
-      <Modal
-        className="ambrosoli"
-        show={showModal3}
-        onHide={closeModal3}
-        size="xl"
+      <CustomModal
+        title="Ambrosoli"
+        modalToShow={modalToShow === "ambrosoli"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Ambrosoli
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div className="container-images">
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center bgYellowCuadrado">
-                <img
-                  src={ambrosoliGif}
-                  alt="Ambrosoli"
-                  className="img-fluid lazyload "
-                  style={{
-                    width: "100%",
-                    maxWidth: "300px",
-                    marginBottom: "1rem",
-                    position: "relative",
-                    // zIndex: 0,
-                  }}
-                />
-              </div>
-            </div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center">
-                <img
-                    src={ambrosoliMp4}
-                    alt="Ambrosoli"
-                    className="img-fluid lazyload "
-                    style={{
-                      width: "100%",
-                      maxWidth: "375px",
-                      marginBottom: "1rem",
-                      position: "relative",
-                      // zIndex: 0,
-                    }}
-                  />
-                {/* <video
-                  controls
-                  style={{
-                    width: "100%",
-                    maxWidth: "375px",
-                    marginBottom: "1rem",
-                    position: "relative",
-                    // zIndex: 0,
-                  }}
-                >
-                  <source src={ambrosoliMp4} type="video/mp4" />
-                  Tu navegador no admite el elemento de video.
-                </video> */}
-              </div>
-            </div>
-            <div className="contenedor-centrado-flex">
-              <div>
-                <img
-                  src={ambrosoliPNG}
-                  alt="Ambrosoli"
-                  className="img-fluid lazyload "
-                  style={{
-                    width: "100%",
-                    maxWidth: "320px",
-                  }}
-                />
-              </div>
+        <div className="container-images">
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center bgYellowCuadrado">
+              <img
+                src={ambrosoliGif}
+                alt="Ambrosoli"
+                className="img-fluid lazyload "
+                style={{
+                  width: "100%",
+                  maxWidth: "300px",
+                  marginBottom: "1rem",
+                  position: "relative",
+                }}
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center">
+              <img
+                src={ambrosoliMp4}
+                alt="Ambrosoli"
+                className="img-fluid lazyload "
+                style={{
+                  width: "100%",
+                  maxWidth: "375px",
+                  marginBottom: "1rem",
+                  position: "relative",
+                }}
+              />
+            </div>
+          </div>
+          <div className="contenedor-centrado-flex">
+            <div>
+              <img
+                src={ambrosoliPNG}
+                alt="Ambrosoli"
+                className="img-fluid lazyload "
+                style={{
+                  width: "100%",
+                  maxWidth: "320px",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </CustomModal>
 
       {/* Baleshka price */}
-
-      <Modal
-        className="Baleshkaprice"
-        show={showModal4}
-        onHide={closeModal4}
-        size="xl"
+      <CustomModal
+        title="Baleshka price"
+        modalToShow={modalToShow === "baleshka-price"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Baleshka price
-            </h1>
+        <div>
+          <div className="font-family-Galvji font-size-17px mb-4 text-align-center">
+            <p>
+              These portraits were taken for the book of Daggiana Peves named{" "}
+              <br></br>
+              “My name is Baleshka Price”.
+            </p>
           </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="font-family-Galvji font-size-17px mb-4 text-align-center">
-              <p>
-                These portraits were taken for the book of Daggiana Peves named{" "}
-                <br></br>
-                “My name is Baleshka Price”.
-              </p>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={baleshkaPriceModal}
+                alt="Baleshka price"
+                className="img-fluid lazyload "
+              />
             </div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={baleshkaPriceModal}
-                  alt="Baleshka price"
-                  className="img-fluid lazyload "
-                />
-              </div>
-              <div className="img text-align-center ">
-                <img
-                  src={baleshkaPriceModal2}
-                  alt="Baleshka price"
-                  className="img-fluid lazyload "
-                />
-              </div>
-              <div className="img text-align-center ">
-                <img
-                  src={baleshkaPriceModal3}
-                  alt="Baleshka price"
-                  className="img-fluid lazyload "
-                />
-              </div>
+            <div className="img text-align-center ">
+              <img
+                src={baleshkaPriceModal2}
+                alt="Baleshka price"
+                className="img-fluid lazyload "
+              />
+            </div>
+            <div className="img text-align-center ">
+              <img
+                src={baleshkaPriceModal3}
+                alt="Baleshka price"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Rebirth */}
-
-      <Modal
-        className="rebirth"
-        show={showModal5}
-        onHide={closeModal5}
-        size="xl"
+      <CustomModal
+        title="Rebirth"
+        modalToShow={modalToShow === "rebirth"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Rebirth
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={rebirthModal}
-                  alt="Rebirth"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={rebirthModal}
+                alt="Rebirth"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* HIU YAN */}
-
-      <Modal
-        className="hiuyan"
-        show={showModal6}
-        onHide={closeModal6}
-        size="xl"
+      <CustomModal
+        title="HIU YAN"
+        modalToShow={modalToShow === "hiuyan"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              HIU YAN
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={hiuyanhModal}
-                  alt="HIU YAN"
-                  className="img-fluid lazyload "
-                />
-              </div>
-              <div className="img text-align-center ">
-                <img
-                  src={hiuyanhModal2}
-                  alt="HIU YAN"
-                  className="img-fluid lazyload "
-                />
-              </div>
-              <div className="img text-align-center ">
-                <img
-                  src={hiuyanhModal3}
-                  alt="HIU YAN"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={hiuyanhModal}
+                alt="HIU YAN"
+                className="img-fluid lazyload "
+              />
+            </div>
+            <div className="img text-align-center ">
+              <img
+                src={hiuyanhModal2}
+                alt="HIU YAN"
+                className="img-fluid lazyload "
+              />
+            </div>
+            <div className="img text-align-center ">
+              <img
+                src={hiuyanhModal3}
+                alt="HIU YAN"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Genetic manipulation */}
-
-      <Modal
-        className="genetic-manipulation"
-        show={showModal7}
-        onHide={closeModal7}
-        size="xl"
+      <CustomModal
+        title="Genetic manipulation"
+        modalToShow={modalToShow === "genetic-manipulation"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Genetic manipulation
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={geneticManipulation}
-                  alt="Genetic manipulation"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={geneticManipulation}
+                alt="Genetic manipulation"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Minicon */}
-
-      <Modal
-        className="minico"
-        show={showModal8}
-        onHide={closeModal8}
-        size="xl"
+      <CustomModal
+        title="minico"
+        modalToShow={modalToShow === "minico"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              minico
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={minico}
-                  alt="minico"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img src={minico} alt="minico" className="img-fluid lazyload " />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Javier arnillas */}
-
-      <Modal
-        className="javier-arnillas"
-        show={showModal9}
-        onHide={closeModal9}
-        size="xl"
+      <CustomModal
+        title=" "
+        modalToShow={modalToShow === "javier-arnillas"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton></Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={javierArnillas}
-                  alt="Javier Arnillas"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={javierArnillas}
+                alt="Javier Arnillas"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Montserrat */}
 
-      <Modal
-        className="Montserrat"
-        show={showModal10}
-        onHide={closeModal10}
-        size="xl"
+      <CustomModal
+        title="Montserrat"
+        modalToShow={modalToShow === "montserrat"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Montserrat
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={monserrat}
-                  alt="Montserrat"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={monserrat}
+                alt="Montserrat"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Dayana Valenzuela */}
-
-      <Modal
-        className="dayana-valenzuela"
-        show={showModal11}
-        onHide={closeModal11}
-        size="xl"
+      <CustomModal
+        title="Montserrat"
+        modalToShow={modalToShow === "dayana-valenzuela"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton></Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <img
-                  src={dayanaValenzuelaModal}
-                  alt="Dayana Valenzuela"
-                  className="img-fluid lazyload "
-                />
-              </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <img
+                src={dayanaValenzuelaModal}
+                alt="Dayana Valenzuela"
+                className="img-fluid lazyload "
+              />
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Crudo impulso colectivo */}
-
-      <Modal
-        className="crudo-impulso-colectivo"
-        show={showModal12}
-        onHide={closeModal12}
-        size="xl"
+      <CustomModal
+        title="Crudo impulso colectivo"
+        modalToShow={modalToShow === "crudo-impulso-colectivo"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              Crudo impulso colectivo
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
+        <div>
           <div className="contenedor-centrado-flex">
             <div className="img text-align-center ">
               <img
@@ -646,53 +429,34 @@ function Photography() {
               />
             </div>
           </div>
-          </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* lola */}
-
-      <Modal
-        className="lola"
-        show={showModal13}
-        onHide={closeModal13}
-        size="xl"
+      <CustomModal
+        title="lola"
+        modalToShow={modalToShow === "lola"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              lola
-            </h1>
-          </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="contenedor-centrado-flex">
-              <div className="img text-align-center ">
-                <div className="fondo-amarillo-titular">
-                  <img
-                    src={lola1}
-                    alt="lola"
-                    className="img-fluid lazyload "
-                  />
-                </div>
+        <div>
+          <div className="contenedor-centrado-flex">
+            <div className="img text-align-center ">
+              <div className="fondo-amarillo-titular">
+                <img src={lola1} alt="lola" className="img-fluid lazyload " />
+              </div>
 
-                <div>
-                  <img src={lola2} alt="lola" className="img-fluid lazyload " />
-                </div>
+              <div>
+                <img src={lola2} alt="lola" className="img-fluid lazyload " />
+              </div>
 
-                <div className="fondo-amarillo-titular">
-                  <img
-                    src={lola3}
-                    alt="lola"
-                    className="img-fluid lazyload "
-                  />
-                </div>
+              <div className="fondo-amarillo-titular">
+                <img src={lola3} alt="lola" className="img-fluid lazyload " />
               </div>
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
+      
 
       <Container className="photography ">
         <Row>
@@ -715,7 +479,7 @@ function Photography() {
                       src={photographySlider1}
                       alt="Lima"
                       className="lazyload"
-                      onClick={openModal}
+                      onClick={() => openModal("lima")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Lima</h4>
@@ -727,7 +491,7 @@ function Photography() {
                       src={photographySlider2}
                       alt="FREAK"
                       className="lazyload"
-                      onClick={openModal2}
+                      onClick={() => openModal("freak")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>FREAK</h4>
@@ -739,7 +503,7 @@ function Photography() {
                       src={photographySlider3}
                       alt="Ambrosoli"
                       className="lazyload"
-                      onClick={openModal3}
+                      onClick={() => openModal("ambrosoli")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Ambrosoli</h4>
@@ -751,7 +515,7 @@ function Photography() {
                       src={photographySlider4}
                       alt="Baleshka Price"
                       className="lazyload"
-                      onClick={openModal4}
+                      onClick={() => openModal("baleshka-price")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Baleshka Price</h4>
@@ -763,7 +527,7 @@ function Photography() {
                       src={photographySlider5}
                       alt="Rebirth"
                       className="lazyload"
-                      onClick={openModal5}
+                      onClick={() => openModal("rebirth")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Rebirth</h4>
@@ -775,7 +539,7 @@ function Photography() {
                       src={photographySlider6}
                       alt="Hiu Yan"
                       className="lazyload"
-                      onClick={openModal6}
+                      onClick={() => openModal("hiuyan")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Hiu Yan</h4>
@@ -787,7 +551,7 @@ function Photography() {
                       src={photographySlider8}
                       alt="Minico"
                       className="lazyload"
-                      onClick={openModal8}
+                      onClick={() => openModal("minico")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Minico</h4>
@@ -799,7 +563,7 @@ function Photography() {
                       src={photographySlider7}
                       alt="Genetic manipulation"
                       className="lazyload"
-                      onClick={openModal7}
+                      onClick={() => openModal("genetic-manipulation")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Genetic manipulation</h4>
@@ -812,7 +576,7 @@ function Photography() {
                       src={photographySlider9}
                       alt="Javier Arnillas"
                       className="lazyload"
-                      onClick={openModal9}
+                      onClick={() => openModal("javier-arnillas")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Javier Arnillas</h4>
@@ -824,7 +588,7 @@ function Photography() {
                       src={photographySlider10}
                       alt="Montserrat"
                       className="lazyload"
-                      onClick={openModal10}
+                      onClick={() => openModal("montserrat")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Montserrat</h4>
@@ -836,7 +600,7 @@ function Photography() {
                       src={photographySlider11}
                       alt="Dayana Valenzuela"
                       className="lazyload"
-                      onClick={openModal11}
+                      onClick={() => openModal("dayana-valenzuela")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Dayana Valenzuela</h4>
@@ -848,7 +612,7 @@ function Photography() {
                       src={photographySlider12}
                       alt="Crudo impulso colectivo"
                       className="lazyload"
-                      onClick={openModal12}
+                      onClick={() => openModal("crudo-impulso-colectivo")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Crudo impulso colectivo</h4>
@@ -858,9 +622,9 @@ function Photography() {
                   <div>
                     <img
                       src={photographySlider13}
-                      alt="Crudo impulso colectivo"
+                      alt="Lola"
                       className="lazyload"
-                      onClick={openModal13}
+                      onClick={() => openModal("lola")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>Lola</h4>
