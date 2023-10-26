@@ -20,6 +20,7 @@ import videoThumbnail from "./assets/images/runa-modal.png";
 import videoFile from "./assets/videos/kevinvideoruna.mp4";
 import cerebralVideo from "./assets/videos/cerebral-video.mp4";
 import { useModal } from "./useModal";
+import { CustomModal } from "./customModal";
 function Artdirection() {
   const { modalToShow, openModal, closeModal } = useModal();
 
@@ -96,208 +97,174 @@ function Artdirection() {
   return (
     <>
       {/* mattias cover */}
-
-      <Modal
-        className="mattias-cover"
-        show={modalToShow === "mattias-cover"} 
-        onHide={closeModal}
-        size="xl"
+      <CustomModal
+        title="MATTIAS cover"
+        modalToShow={modalToShow === "mattias-cover"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0 flex-column" closeButton>
-          <div>
-            <div className="contenedor-centrado-flex tex flex-direction-column text-align-center">
-              <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-                MATTIAS cover
-              </h1>
-            </div>
+        <div>
+          <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
+            <strong>CW:</strong>{" "}
+            <span className="margin-right-2rem"> Landon Bennett</span>{" "}
+            <strong className="line-vertical"> AD:</strong>{" "}
+            <span>Natalia Tamariz</span>
           </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
-              <strong>CW:</strong>{" "}
-              <span className="margin-right-2rem"> Landon Bennett</span>{" "}
-              <strong className="line-vertical"> AD:</strong>{" "}
-              <span>Natalia Tamariz</span>
-            </div>
-            <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
-              <p>
-                <strong>Problem:</strong> Men want to look good by getting tan,
-                but at the end their skin look orange. <br></br>
-              </p>
-              <p>
-                <strong>Solution:</strong> Wear MATTIAS mens foundation.
-                <br></br>
-              </p>
-              <p>
-                <strong>Concept:</strong> Not your presidents makeup
-              </p>
-            </div>
-            <div className="contenedor-centrado-flex">
-              <img
-                src={imagenModal}
-                alt="MATTIAS cover"
-                className="img-fluid lazyload"
-              />
-            </div>
+          <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
+            <p>
+              <strong>Problem:</strong> Men want to look good by getting tan,
+              but at the end their skin look orange. <br></br>
+            </p>
+            <p>
+              <strong>Solution:</strong> Wear MATTIAS mens foundation.
+              <br></br>
+            </p>
+            <p>
+              <strong>Concept:</strong> Not your presidents makeup
+            </p>
           </div>
-        </Modal.Body>
-      </Modal>
+          <div className="contenedor-centrado-flex">
+            <img
+              src={imagenModal}
+              alt="MATTIAS cover"
+              className="img-fluid lazyload"
+            />
+          </div>
+        </div>
+      </CustomModal>
 
       {/* runa */}
-
-      <Modal className="runa" 
-      show={modalToShow === "runa"} onHide={closeModal} 
-      size="xl">
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 fondo-amarillo-titular">
-              RUNA
-            </h1>
+      <CustomModal
+        title="RUNA"
+        modalToShow={modalToShow === "runa"}
+        closeModal={closeModal}
+      >
+        <div>
+          <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
+            <strong>CW:</strong>{" "}
+            <span className="margin-right-2rem"> Maria Mainelli-Ajmo</span>{" "}
+            <strong className="line-vertical"> AD:</strong>{" "}
+            <span>Natalia Tamariz</span>
           </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
-              <strong>CW:</strong>{" "}
-              <span className="margin-right-2rem"> Maria Mainelli-Ajmo</span>{" "}
-              <strong className="line-vertical"> AD:</strong>{" "}
-              <span>Natalia Tamariz</span>
-            </div>
 
-            <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
-              <p>
-                <strong>Strategy:</strong> Runa is an energy drink that is made
-                from ingredients from the Amazon.
-              </p>
-              <p>
-                <strong>Concept:</strong> Animals and plants from the Amazon are
-                full of their own unique powers. Why don’t humans use the power
-                of nature to face daily problems with the help of Runa?
-              </p>
-            </div>
-            <div className="contenedor-centrado-flex ">
-              <div className="img">
-                {videoVisible ? (
-                  <video
-                    controls
-                    width="100%"
-                    style={{ maxWidth: "770px" }}
-                    onClick={toggleVideo}
-                  >
-                    <source src={videoFile} type="video/mp4" />
-                    Tu navegador no admite el elemento de video.
-                  </video>
-                ) : (
-                  <img
-                    src={videoThumbnail}
-                    alt="RUNA"
-                    width="100%"
-                    onClick={toggleVideo}
-                    style={{ cursor: "pointer" }}
-                  />
-                )}
-              </div>
+          <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
+            <p>
+              <strong>Strategy:</strong> Runa is an energy drink that is made
+              from ingredients from the Amazon.
+            </p>
+            <p>
+              <strong>Concept:</strong> Animals and plants from the Amazon are
+              full of their own unique powers. Why don’t humans use the power of
+              nature to face daily problems with the help of Runa?
+            </p>
+          </div>
+          <div className="contenedor-centrado-flex ">
+            <div className="img">
+              {videoVisible ? (
+                <video
+                  controls
+                  width="100%"
+                  style={{ maxWidth: "770px" }}
+                  onClick={toggleVideo}
+                >
+                  <source src={videoFile} type="video/mp4" />
+                  Tu navegador no admite el elemento de video.
+                </video>
+              ) : (
+                <img
+                  src={videoThumbnail}
+                  alt="RUNA"
+                  width="100%"
+                  onClick={toggleVideo}
+                  style={{ cursor: "pointer" }}
+                />
+              )}
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Cerebral */}
-      <Modal
-        className="cerebral"
-        show={modalToShow === "cerebral"} onHide={closeModal}
-        size="xl"
+      <CustomModal
+        title="Cerebral"
+        modalToShow={modalToShow === "cerebral"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">cerebral</h1>
+        <div>
+          <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
+            <strong>CW:</strong>{" "}
+            <span className="margin-right-2rem"> Ezekiel Wariboko</span>{" "}
+            <strong className="line-vertical"> AD:</strong>{" "}
+            <span>Natalia Tamariz</span>
           </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
-              <strong>CW:</strong>{" "}
-              <span className="margin-right-2rem"> Ezekiel Wariboko</span>{" "}
-              <strong className="line-vertical"> AD:</strong>{" "}
-              <span>Natalia Tamariz</span>
-            </div>
 
-            <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
-              <p>
-                <strong>Strategy:</strong> Cerebral provides Black men a safe
-                place to express themselves and release trauma.
-              </p>
-              <p>
-                <strong>Concept:</strong> Yo, that’s facts.
-                <br></br>
-              </p>
-            </div>
-            <div className="contenedor-centrado-flex">
+          <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
+            <p>
+              <strong>Strategy:</strong> Cerebral provides Black men a safe
+              place to express themselves and release trauma.
+            </p>
+            <p>
+              <strong>Concept:</strong> Yo, that’s facts.
+              <br></br>
+            </p>
+          </div>
+          <div className="contenedor-centrado-flex">
+            <div>
               <div>
-                <div>
-                  <img
-                    src={cerebral1}
-                    alt="cerebral"
-                    className="img-fluid lazyload position-relative"
-                  />
-                </div>
-                
-                <div className=" bgYellowCuadrado">
-                  <video
-                    controls
-                    style={{
-                      width: "100%",
-                      maxWidth: "750px",
-                      marginBottom: "1rem",
-                      position: "relative",
-                      zIndex: 0,
-                    }}
-                  >
-                    <source src={cerebralVideo} type="video/mp4" />
-                    Tu navegador no admite el elemento de video.
-                  </video>
-                </div>
+                <img
+                  src={cerebral1}
+                  alt="cerebral"
+                  className="img-fluid lazyload position-relative"
+                />
+              </div>
+
+              <div className=" bgYellowCuadrado">
+                <video
+                  controls
+                  style={{
+                    width: "100%",
+                    maxWidth: "750px",
+                    marginBottom: "1rem",
+                    position: "relative",
+                    zIndex: 0,
+                  }}
+                >
+                  <source src={cerebralVideo} type="video/mp4" />
+                  Tu navegador no admite el elemento de video.
+                </video>
               </div>
             </div>
           </div>
-        </Modal.Body>
-      </Modal>
+        </div>
+      </CustomModal>
 
       {/* Krylon */}
-      <Modal
-        className="KRYLON"
-        show={modalToShow === "krylon"} onHide={closeModal}
-        size="xl"
+      <CustomModal
+        title="KRYLON"
+        modalToShow={modalToShow === "krylon"}
+        closeModal={closeModal}
       >
-        <Modal.Header className="p-5 pb-0" closeButton>
-          <div className="contenedor-centrado-flex align-items-center width-100">
-            <h1 className="font-family-Starz-2016 ">KRYLON</h1>
+        <div>
+          <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
+            <strong>CW:</strong>{" "}
+            <span className="margin-right-2rem"> Landon Bennett</span>{" "}
+            <strong className="line-vertical"> AD:</strong>{" "}
+            <span>Natalia Tamariz</span>
           </div>
-        </Modal.Header>
-        <Modal.Body className="p-5 pt-3">
-          <div>
-            <div className="text-align-center font-family-Galvji font-size-20px mb-3 artDirection-modal_sub-title">
-              <strong>CW:</strong>{" "}
-              <span className="margin-right-2rem"> Landon Bennett</span>{" "}
-              <strong className="line-vertical"> AD:</strong>{" "}
-              <span>Natalia Tamariz</span>
-            </div>
 
-            <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
-              <p>
-                <strong>Strategy:</strong> Spray it, to say it
-              </p>
-              <p>
-                <strong>Concept:</strong> Get it off your chest
-              </p>
-            </div>
-            <div className="contenedor-centrado-flex">
-              <img src={krylon} alt="krylon" className="img-fluid lazyload" />
-            </div>
+          <div className="font-family-Galvji font-size-17px mb-4 artDirection-modal_parrafo">
+            <p>
+              <strong>Strategy:</strong> Spray it, to say it
+            </p>
+            <p>
+              <strong>Concept:</strong> Get it off your chest
+            </p>
           </div>
-        </Modal.Body>
-      </Modal>
+          <div className="contenedor-centrado-flex">
+            <img src={krylon} alt="krylon" className="img-fluid lazyload" />
+          </div>
+        </div>
+      </CustomModal>
+      
       <Container className="art-direction">
         <Row>
           <Col
@@ -324,7 +291,7 @@ function Artdirection() {
                       src={sliderArtDirectionCerebral}
                       alt="Cerebral"
                       className="lazyload"
-                      onClick={() => openModal('cerebral')}
+                      onClick={() => openModal("cerebral")}
                       style={{ cursor: "pointer" }}
                     />
 
@@ -337,7 +304,7 @@ function Artdirection() {
                       src={sliderArtDirectionKrylon}
                       alt="Krylon"
                       className="lazyload"
-                      onClick={() => openModal('krylon')}
+                      onClick={() => openModal("krylon")}
                       style={{ cursor: "pointer" }}
                     />
 
@@ -350,7 +317,7 @@ function Artdirection() {
                       src={sliderArtDirectionMtiasMakeUp}
                       alt="MATTIAS COVER"
                       className="lazyload"
-                      onClick={() => openModal('mattias-cover')}
+                      onClick={() => openModal("mattias-cover")}
                       style={{ cursor: "pointer" }}
                     />
 
@@ -363,7 +330,7 @@ function Artdirection() {
                       src={sliderArtDirectionRuna}
                       alt="RUNA"
                       className="lazyload"
-                      onClick={() => openModal('runa')}
+                      onClick={() => openModal("runa")}
                       style={{ cursor: "pointer" }}
                     />
                     <h4>RUNA</h4>
