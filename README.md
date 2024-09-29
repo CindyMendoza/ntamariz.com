@@ -1,8 +1,14 @@
-# React + Vite
+# Informative Portfolio of a Visual Creator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a visual creator portfolio showcasing her work, including photos, videos, and animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+
+This project uses the following technologies:
+
+[![React](https://img.shields.io/badge/React-18.2.0-brightgreen)](https://react.dev/)
+[![React Bootstrap](https://img.shields.io/badge/React_Bootstrap-2.8.0-brightgreen)](https://github.com/react-bootstrap/react-bootstrap)
+[![Font Awesome](https://img.shields.io/badge/Font_Awesome-6.4.2-brightgreen)](http://docs.fontawesome.com/web/use-with/vue)
+[![Vite](https://img.shields.io/badge/Vite-4.4.5-brightgreen)](https://vitejs.dev/)
